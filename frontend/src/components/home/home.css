@@ -1,0 +1,81 @@
+.container-xl {
+    max-width: 1450px !important;
+}
+
+.design-navbar {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 20px 20px;
+
+    background-color: white;
+}
+
+.principal-title {
+    font-family: 'Palatino';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+
+    text-align: center;
+
+    color: black;
+}
+
+.secundar-title {
+    font-family: 'Palatino';
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+
+    text-align: center;
+    
+    color: black
+}
+
+.cuprins-box {
+    margin: 15px 0 15px 0;
+    padding: 10px 20px 10px 20px;
+
+    border: solid 0.3em white;
+    border-radius: 30px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+
+    border-radius: 30px;
+}
+
+.cuprins-title {
+    font-family: 'Palatino';
+    font-size: 25px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+.cuprins-text {
+    font-family: 'Palatino';
+    font-size: 20px;
+    font-weight: 500;
+
+    color: rgb(26, 25, 25);
+}
+
+.img-fix {
+    width: auto;
+    height: auto;
+    margin: 15px;
+}
+
+.footer-fix {
+    min-height: calc(100vh - 203px);
+}
+
+@media only screen and (max-width: 600px) {
+    .img-fix {
+        width: 200px;
+        height: 170px;
+    }
+}
+
+.ceva {
+    word-spacing: 30px !important;
+}

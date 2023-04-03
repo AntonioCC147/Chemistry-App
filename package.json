@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mdb-react-ui-kit": "^5.1.0",
+    "react-latex": "^2.0.0"
+  }
+}
