@@ -1,9 +1,3 @@
-# Schelet proiect proba tehnica LSAC IT 2022
-
-Made by Andrei Mărunțiș
-
-![Bobocii IT](https://media.tenor.com/NwY5ppxLs_oAAAAM/kitten-keybo.gif)
-
 ## Features
 
 - Simple frontend built using React
