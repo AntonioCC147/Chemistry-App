@@ -5,6 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Navbar from "../navbar/navbar";
 import InfoBox from "../infoBox/infoBox";
 
+import Introd from '../../assets/images/Introducere.jpg';
+
 export default function Introducere() {
     return (
         <>
@@ -16,6 +18,7 @@ export default function Introducere() {
                     <Col sm={8}>
                         <InfoBox information={
                             <>
+                                <div className="text-center"><img src={Introd} alt="Introducere"/></div>
                                 <p>Randamentul superior va face din ele mijlocul de producere al energiei electrice privilegiat al secolului.</p>
                                 <p>Realizatorii de telefoane mobile sau de microcalculatoare portabile, visează de ani de zile:
                                     pila de combustie ar fi principalul mijloc de a crește autonomia produselor în mod considerabil. Și industria

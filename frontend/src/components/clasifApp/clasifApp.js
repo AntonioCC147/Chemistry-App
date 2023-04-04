@@ -6,6 +6,7 @@ import Navbar from "../navbar/navbar";
 import InfoBox from "../infoBox/infoBox";
 
 import './clasifApp.css';
+import Aplicatii from '../../assets/images/Aplicatii.jpg';
 
 export default function clasifApp() {
     return (
@@ -14,6 +15,9 @@ export default function clasifApp() {
                 <Row>
                     <Col sm={4}>
                         <Navbar />
+                    </Col>
+                    <Col sm={4} className="text-center">
+                        <img className="img-fix" src={Aplicatii} alt="Aplicatii"/>
                     </Col>
                     <Col sm={4}>
                         <InfoBox information={
@@ -34,6 +38,9 @@ export default function clasifApp() {
                             </div>
                         }/>
                     </Col>
+                </Row>
+                <Row>
+                    <Col sm={4}/>
                     <Col sm={4}>
                         <InfoBox information={
                             <div className="design-container"> 
@@ -49,6 +56,7 @@ export default function clasifApp() {
                             </div>
                         }/>
                     </Col>
+                    <Col sm={4}/>
                 </Row>
             </Container>
         </>

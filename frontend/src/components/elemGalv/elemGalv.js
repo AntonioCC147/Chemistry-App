@@ -26,19 +26,18 @@ export default function elemGalv() {
                             <>
                                 <p className="cuprins-title">Elementul Galvanic:</p>
                                 <p>Pilele electrochimice (sau pilele galvanice) sunt sisteme în care energia chimică este transformată în energie electrică.</p>
-                                <p className="cuprins-title">Componenta:</p>
+                                <p><b>Componenta:</b></p>
                                 <ul>
                                     <li>2 electrozi (două semicelule);</li>
                                     <li>punte de sare;</li>
                                     <li>volmetru;</li>
                                     <li>conductor metalic exterior;</li>
                                 </ul>
-                                <p align="center"><b>Poza</b></p>
                                 <p><b>Electrodul:</b> la nivelul lui are loc oxidarea (în cazul anodului) sau reducerea (în cazul catodului).
                                     Combinările dintre metalele care sunt folosite drept electrozi sunt date de <u>seria de reactivitate</u>.
                                 </p>
                                 <p><b>Anodul </b>- electronul de <Latex>$Zn$</Latex>:</p>
-                                <div className="text-center ceva">
+                                <div className="text-center">
                                     <Latex>$Zn^\circ$</Latex><Latex>{s}</Latex><Latex>{arrowminus}</Latex><Latex>Zn</Latex><Latex>{twoplus}</Latex><Latex>{aq}</Latex>
                                 </div>
                                 <ul>

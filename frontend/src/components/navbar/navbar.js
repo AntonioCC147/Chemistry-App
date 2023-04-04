@@ -12,7 +12,7 @@ export default function Navbar() {
                 <Link to="/elementulgalvanic" style={{ color: 'inherit', textDecoration: 'none' }}>Elementul Galvanic</Link><br/>
                 <Link to="/how" style={{ color: 'inherit', textDecoration: 'none' }}>Cum funcționează?</Link><br/>
                 <Link to="/clasapp" style={{ color: 'inherit', textDecoration: 'none' }}>Clasificare și Aplicații</Link><br/>
-                <Link to="/cs1" style={{ color: 'inherit', textDecoration: 'none' }}>Coming Soon 1</Link><br/>
+                <Link to="/acumulatori" style={{ color: 'inherit', textDecoration: 'none' }}>Acumulatori</Link><br/>
                 <Link to="/cs2" style={{ color: 'inherit', textDecoration: 'none' }}>Coming Soon 2</Link><br/>
                 <Link to="/cs3" style={{ color: 'inherit', textDecoration: 'none' }}>Coming Soon 3</Link><br/>
                 <Link to="/testeaza" style={{ color: 'red'}}>Verifică (Testează) ce știi</Link>

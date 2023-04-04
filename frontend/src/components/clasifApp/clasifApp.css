@@ -1,3 +1,12 @@
 .design-container {
     height: 320px !important;
 }
+
+.img-fix {
+    width: 400px;
+    height: auto;
+
+    
+  
+    filter: drop-shadow(0 1px 16px #bdbdbd);
+}

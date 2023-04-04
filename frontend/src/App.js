@@ -14,7 +14,7 @@ import ElemGalv from './components/elemGalv/elemGalv';
 import How from './components/how/how';
 import ClasApp from './components/clasifApp/clasifApp';
 import Testeaza from './components/testeaza/testeaza';
-import Cs1 from './components/cs1/cs1';
+import Acumulatori from './components/acumulatori/acumulatori';
 
 import Footer from './components/footer/footer';
 
@@ -40,7 +40,7 @@ function App() {
           <Route path="/how" element={<How/>}></Route>
           <Route path="/clasapp" element={<ClasApp/>}></Route>
           <Route path="/testeaza" element={<Testeaza/>}></Route>
-          <Route path="/cs1" element={<Cs1/>}></Route>
+          <Route path="/acumulatori" element={<Acumulatori/>}></Route>
         </Routes>
       </Router>
       <Footer />
