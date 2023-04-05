@@ -2,11 +2,12 @@
     height: 320px !important;
 }
 
-.img-fix {
+.img-fix-app {
     width: 400px;
     height: auto;
 
-    
+    margin: 15px;
+    border-radius: 20px;
   
     filter: drop-shadow(0 1px 16px #bdbdbd);
 }

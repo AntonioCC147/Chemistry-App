@@ -1,3 +1,5 @@
+import Latex from 'react-latex';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -6,6 +8,9 @@ import Navbar from "../navbar/navbar";
 import InfoBox from "../infoBox/infoBox";
 
 export default function Acumulatori() {
+    const s = `$_{(s)} \\;$`; const twos = `$_{2(s)} \\;$`; const fours = `$_{4(s)} \\;$`;
+    const fourtwominus = `$_4^{2-} \\;$`;
+
     return (
         <>
             <Container className="container-xl footer-fix">
@@ -28,10 +33,18 @@ export default function Acumulatori() {
                                 <p>In timpul functionarii acumulatorului, când acesta debiteaza curent electric, la cei doi electrozi au loc
                                     procesele care pot fi reprezentate prin ecuatiile:
                                 </p>
-                                <p>LATEX</p>
-                                <p>LATEX</p>
+                                <div className="text-center some-space">
+                                    <Latex>$(+)\;PbO$</Latex><Latex>{twos}</Latex><Latex>$+\;So$</Latex><Latex>{fourtwominus}</Latex>
+                                    <Latex>$+\;4H^+ + 2e^- \longrightarrow PbSO$</Latex><Latex>{fours}</Latex><Latex>$+2H_2O$</Latex>
+                                </div>
+                                <div className="text-center some-space">
+                                    <Latex>$(-)\;Pb$</Latex><Latex>{s}</Latex><Latex>$+\;So$</Latex><Latex>{fourtwominus}</Latex>
+                                    <Latex>$\longrightarrow PbSO$</Latex><Latex>{fours}</Latex><Latex>$+2e^-$</Latex>
+                                </div>
                                 <p>Reactia totala presupune transformarea Pb si a Pb0 2 in PbSO 4 prin consumarea acidului sulfuric.</p>
-                                <p>LATEX</p>
+                                <div className="text-center some-space">
+                                    <Latex>$Pb + PbO_2 + 4H^+ + 2So$</Latex><Latex>{fourtwominus}</Latex><Latex>$\longrightarrow 2PbSo_4 + 2H_2O$</Latex>
+                                </div>
                                 <p>La ambii electrozi se formeaza PbSO 4 insolubil, care adera la placi, se sulfateaza. Granulele fine de PbSO
                                     4 formate initial se maresc in timpul functionarii, astfel incat randamentul acumulatorului scade.
                                 </p>

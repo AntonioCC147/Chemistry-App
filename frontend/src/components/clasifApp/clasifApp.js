@@ -17,7 +17,7 @@ export default function clasifApp() {
                         <Navbar />
                     </Col>
                     <Col sm={4} className="text-center">
-                        <img className="img-fix" src={Aplicatii} alt="Aplicatii"/>
+                        <img className="img-fix-app" src={Aplicatii} alt="Aplicatii"/>
                     </Col>
                     <Col sm={4}>
                         <InfoBox information={

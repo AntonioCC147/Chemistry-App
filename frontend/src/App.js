@@ -9,12 +9,16 @@ import Logo from './assets/images/Logo.png';
 
 //Pages
 import Acasa from "./components/home/home";
-import Introducere from './components/introducere/introducere';
 import ElemGalv from './components/elemGalv/elemGalv';
 import How from './components/how/how';
 import ClasApp from './components/clasifApp/clasifApp';
 import Testeaza from './components/testeaza/testeaza';
 import Acumulatori from './components/acumulatori/acumulatori';
+import PilaDaniell from './components/pile/pilaDanniel';
+import PilaLenclanche from './components/pile/pilaLenclanche';
+import PilaAlcalina from './components/pile/pilaAlcalina';
+import PilaCombustie from './components/pile/pilaCombustie';
+import Reactivitate from './components/reactivitate/reactivitate';
 
 import Footer from './components/footer/footer';
 
@@ -35,12 +39,16 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Acasa/>}></Route>
-          <Route path="/introducere" element={<Introducere/>}></Route>
           <Route path="/elementulgalvanic" element={<ElemGalv/>}></Route>
           <Route path="/how" element={<How/>}></Route>
           <Route path="/clasapp" element={<ClasApp/>}></Route>
           <Route path="/testeaza" element={<Testeaza/>}></Route>
           <Route path="/acumulatori" element={<Acumulatori/>}></Route>
+          <Route path="/piladaniell" element={<PilaDaniell/>}></Route>
+          <Route path="/pilalenclanche" element={<PilaLenclanche/>}></Route>
+          <Route path="/pilaalcalina" element={<PilaAlcalina/>}></Route>
+          <Route path="/pilacombustie" element={<PilaCombustie/>}></Route>
+          <Route path="/reactivitate" element={<Reactivitate/>}></Route>
         </Routes>
       </Router>
       <Footer />
