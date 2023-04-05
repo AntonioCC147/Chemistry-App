@@ -3,8 +3,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 //Images
-import PileE from '../../assets/images/PileElectrice.jpg';
-import Introd from '../../assets/images/Introducere.jpg';
+import PileE1 from '../../assets/images/PileElectrice.jpg';
+import PileE2 from '../../assets/images/PileE2.jpg';
+import PileE3 from '../../assets/images/PileE3.jpg';
 
 //Pages
 import './home.css';
@@ -21,14 +22,13 @@ export default function Home() {
                         <Navbar />
                     </Col>
                     <Col sm={8} className="text-center">
-                        <img className="img-fix" src={PileE} alt="Pile Electrice"/>
+                        <img className="img-fix" src={PileE1} alt="Pile Electrice 1"/>
                     </Col>
                 </Row>
 			    <Row>
                     <Col sm={7}>
                         <InfoBox information={
                             <>
-                                
                                 <p>Randamentul superior va face din ele mijlocul de producere al energiei electrice privilegiat al secolului.</p>
                                 <p>Realizatorii de telefoane mobile sau de microcalculatoare portabile, visează de ani de zile:
                                     pila de combustie ar fi principalul mijloc de a crește autonomia produselor în mod considerabil. Și industria
@@ -46,7 +46,12 @@ export default function Home() {
                         }/>
                         </Col>
                         <Col sm={5}>
-                            <div className="text-center"><img src={Introd} alt="Introducere"/></div>
+                            <Row>
+                                <div className="text-center"><img className="img-fix-home" src={PileE2} alt="Pile Electrice 2"/></div>
+                            </Row>
+                            <Row>
+                                <div className="text-center"><img className="img-fix-home" src={PileE3} alt="Pile Electrice 3"/></div>
+                            </Row>
                         </Col>
 			    </Row>
             </Container>
