@@ -5,8 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Navbar from "../navbar/navbar";
 import InfoBox from "../infoBox/infoBox";
 
-import './clasifApp.css';
 import Aplicatii from '../../assets/images/Aplicatii.jpg';
+import './clasifApp.css';
 
 export default function clasifApp() {
     return (
@@ -52,7 +52,8 @@ export default function clasifApp() {
                                     <li>Jucării</li>
                                 </ul>
                                 <p className="">Pilele de combustie încep să devină o alternativă pentru consumul de energie electrică
-                                    din zonele rurale, zonele izolate, eliminând reţelele de distribuţie clasice</p>
+                                    din zonele rurale, zonele izolate, eliminând reţelele de distribuţie clasice
+                                </p>
                             </div>
                         }/>
                     </Col>

@@ -10,16 +10,16 @@
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 20px 20px;
 
-    background-color: white;
     filter: drop-shadow(0 1px 16px #bdbdbd);
+    background-color: white;
 }
 
 .principal-title {
     font-family: 'Palatino';
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 0;
 
+    margin-bottom: 0;
     text-align: center;
 
     color: black;
@@ -29,11 +29,26 @@
     font-family: 'Palatino';
     font-size: 20px;
     font-weight: 700;
+    
     margin-top: 0;
-
     text-align: center;
     
     color: black
+}
+
+.test-button {
+    margin: 30px 10px 20px 10px;
+    padding: 10px 20px 10px 20px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+    border: solid 0.3em pink;
+    border-radius: 30px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+
+    background-color: pink;
 }
 
 .cuprins-box {
@@ -43,8 +58,6 @@
     border: solid 0.3em white;
     border-radius: 30px;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-
-    border-radius: 30px;
 }
 
 .cuprins-title {
@@ -77,6 +90,7 @@
 .img-fix {
     width: auto;
     height: auto;
+    
     margin: 15px;
 }
 
@@ -91,6 +105,10 @@
     }
 }
 
-.ceva {
-    word-spacing: 30px !important;
+@media only screen and (max-width: 820px) {
+    .img-mobile {
+        margin: 10px 0px 20px 0px;
+        width: 300px;
+        height: auto;
+    }
 }

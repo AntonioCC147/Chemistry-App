@@ -6,9 +6,7 @@ export default function InfoBox(props) {
     return (
         <>
             <div className="info-container">
-                <div class = "vertical">
-                    {information}
-                 </div>
+                <div class = "vertical">{information}</div>
             </div>
         </>
     )

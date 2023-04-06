@@ -1,4 +1,4 @@
-import './testeaza.css';
+import Latex from 'react-latex';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -9,9 +9,8 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
-import Latex from 'react-latex';
-
 import Navbar from "../navbar/navbar";
+import './testeaza.css';
 
 //Images
 import Ceva from '../../assets/images/Chem.svg';

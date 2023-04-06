@@ -2,16 +2,15 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-//Images
 import PileE1 from '../../assets/images/PileElectrice.jpg';
 import PileE2 from '../../assets/images/PileE2.jpg';
 import PileE3 from '../../assets/images/PileE3.jpg';
 
-//Pages
-import './home.css';
-import '../infoBox/infoBox.css';
 import Navbar from "../navbar/navbar";
 import InfoBox from '../infoBox/infoBox';
+
+import './home.css';
+import '../infoBox/infoBox.css';
 
 export default function Home() {
     return (
@@ -22,7 +21,7 @@ export default function Home() {
                         <Navbar />
                     </Col>
                     <Col sm={8} className="text-center">
-                        <img className="img-fix" src={PileE1} alt="Pile Electrice 1"/>
+                        <img className="img-fix img-mobile" src={PileE1} alt="Pile Electrice 1"/>
                     </Col>
                 </Row>
 			    <Row>
@@ -47,10 +46,10 @@ export default function Home() {
                         </Col>
                         <Col sm={5}>
                             <Row>
-                                <div className="text-center"><img className="img-fix-home" src={PileE2} alt="Pile Electrice 2"/></div>
+                                <div className="text-center"><img className="img-fix-home img-mobile" src={PileE2} alt="Pile Electrice 2"/></div>
                             </Row>
                             <Row>
-                                <div className="text-center"><img className="img-fix-home" src={PileE3} alt="Pile Electrice 3"/></div>
+                                <div className="text-center"><img className="img-fix-home img-mobile" src={PileE3} alt="Pile Electrice 3"/></div>
                             </Row>
                         </Col>
 			    </Row>
