@@ -8,7 +8,7 @@ import './navbar.css';
 
 export default function NavbarComponent() {
   return (
-    <Navbar className="navbar-container" collapseOnSelect expand="lg" bg="white">
+    <Navbar className="navbar-container" collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="/" className="navbar-brand">Acasă</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
