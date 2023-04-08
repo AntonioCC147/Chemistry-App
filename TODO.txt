@@ -1,0 +1,2 @@
+De schimbat imaginea de la clasif & app to be responsive
+Responsive la info cointainer si navbar container

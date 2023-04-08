@@ -1,38 +1,70 @@
-## Features
+# Getting Started with Create React App
 
-- Simple frontend built using React
-    - If you don't want to use React, just delete the contents of `frontend` and use plain HTML
-- Simple backend app using NodeJS
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Installation
+## Available Scripts
 
-To use this skeleton you will need the following tools:
+In the project directory, you can run:
 
-- node: https://nodejs.org/en/download/
-- MongoDB Community Server: https://www.mongodb.com/try/download/community
-- MongoDB Compass: https://www.mongodb.com/try/download/compass
+### `npm start`
 
-> **Note**: MongoDB Community Server installer will prompt you to install MongoDB Compass, you can check the box and skip last step :)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Other recommended tools for developing applications:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- Postman: https://www.postman.com/downloads/
+### `npm test`
 
-This skeleton consists of 2 applications that need to be installed using npm:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- To install backend, run command `cd .\backend\` from project root directory and then install with command `npm i`
-- Similarly, install frontend from `frontend` folder
+### `npm run build`
 
-## Running
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The 2 applications need to be run separately:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- To start backend, go to `backend` folder and run command `npm start`
-    - Backend might also need `nodemon` to start, run command `npm i -g nodemon` from `backend` folder to install nodemon
-- Similarly start frontend from `frontend` folder
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Important!!!
+### `npm run eject`
 
-Do **NOT** fork this repository, the fork will be public!
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Instead, download code as .zip archive and copy into your personal project directory if you want to use it.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -34,16 +34,16 @@ export default function Acumulatori() {
                                     procesele care pot fi reprezentate prin ecuatiile:
                                 </p>
                                 <div className="text-center some-space">
-                                    <Latex>$(+)\;PbO$</Latex><Latex>{twos}</Latex><Latex>$+\;So$</Latex><Latex>{fourtwominus}</Latex>
+                                    <Latex>$(+)\;PbO$</Latex><Latex>{twos}</Latex><Latex>$+\;SO$</Latex><Latex>{fourtwominus}</Latex>
                                     <Latex>$+\;4H^+ + 2e^- \longrightarrow PbSO$</Latex><Latex>{fours}</Latex><Latex>$+2H_2O$</Latex>
                                 </div>
                                 <div className="text-center some-space">
-                                    <Latex>$(-)\;Pb$</Latex><Latex>{s}</Latex><Latex>$+\;So$</Latex><Latex>{fourtwominus}</Latex>
+                                    <Latex>$(-)\;Pb$</Latex><Latex>{s}</Latex><Latex>$+\;SO$</Latex><Latex>{fourtwominus}</Latex>
                                     <Latex>$\longrightarrow PbSO$</Latex><Latex>{fours}</Latex><Latex>$+2e^-$</Latex>
                                 </div>
                                 <p>Reactia totala presupune transformarea Pb si a Pb0 2 in PbSO 4 prin consumarea acidului sulfuric.</p>
                                 <div className="text-center some-space">
-                                    <Latex>$Pb + PbO_2 + 4H^+ + 2So$</Latex><Latex>{fourtwominus}</Latex><Latex>$\longrightarrow 2PbSo_4 + 2H_2O$</Latex>
+                                    <Latex>$Pb + PbO_2 + 4H^+ + 2SO$</Latex><Latex>{fourtwominus}</Latex><Latex>$\longrightarrow 2PbSO_4 + 2H_2O$</Latex>
                                 </div>
                                 <p>La ambii electrozi se formeaza PbSO 4 insolubil, care adera la placi, se sulfateaza. Granulele fine de PbSO
                                     4 formate initial se maresc in timpul functionarii, astfel incat randamentul acumulatorului scade.
