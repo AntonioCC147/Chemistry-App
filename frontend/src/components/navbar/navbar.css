@@ -1,0 +1,25 @@
+.navbar-container {
+    margin: 0px 75px 0px 75px;
+    padding: 20px;
+    height: 75px;
+
+    text-align: justify;
+    font-family: 'Comic Sans';
+    font-size: 19px;
+
+    border: solid 0.3em white;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.test-button {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+    border: solid 0.3em #c9c9c9;
+    border-radius: 30px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+
+    background-color: #c9c9c9;
+}

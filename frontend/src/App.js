@@ -19,9 +19,9 @@ import PilaCombustie from './components/pile/pilaCombustie';
 import Testeaza from './components/testeaza/testeaza';
 import Footer from './components/footer/footer';
 
-function App() {
+export default function App() {
   return (
-    <>
+    <div className="background">
       <div className="container-xl">
         <Row className="design-navbar">
           <Col sm={2}>
@@ -49,8 +49,6 @@ function App() {
         </Routes>
       </Router>
       <Footer />
-    </>
+    </div>
   );
 }
-
-export default App;
