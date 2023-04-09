@@ -69,15 +69,42 @@ export default function Testeaza() {
                     
 
                     <Col sm={8}>
-                        <div className="work-space">
+                        <div className="work-space-box">
                             <Row>
-                            <Col sm={6}>
+                                <Col sm={6}>
+                                    <div className="glass-box">
+                                        <SpawnGlass name={name}/>
+                                    </div>
+                                </Col>
                                 
-                                <SpawnGlass name={name} />
-                            </Col>
-                            <Col sm={6}>
-                                bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-                            </Col>
+                                <Col sm={6}>
+                                    <div className="glass-box">
+                                        <SpawnGlass name={name}/>
+                                    </div>
+                                </Col>
+                            </Row>
+
+                            <Row>
+                                <Col sm={3}>
+                                    <div className="pahar-box">
+                                        {name}
+                                    </div>
+                                </Col>
+                                <Col sm={3}>
+                                    <div className="pile-box">
+                                        {name}
+                                    </div>
+                                </Col>
+                                <Col sm={3}>
+                                    <div className="pahar-box">
+                                        {name}
+                                    </div>
+                                </Col>
+                                <Col sm={3}>
+                                    <div className="pile-box">
+                                        {name}
+                                    </div>
+                                </Col>
                             </Row>
                         </div>
                     </Col>  

@@ -5,6 +5,8 @@ const SpawnGlass = ({ name }) => {
         return (
             <img className="chem-glass" src={LeftGlass} alt="Glass"/>
     );
+    else
+    return ( <p>Undefined</p> );
 }
 
 export default SpawnGlass;
