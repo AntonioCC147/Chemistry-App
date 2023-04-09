@@ -1,2 +1,3 @@
 De schimbat imaginea de la clasif & app to be responsive
 Responsive la info cointainer si navbar container
+Allert pt cand nu e bine
