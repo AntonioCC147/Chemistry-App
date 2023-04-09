@@ -16,14 +16,19 @@ import NavbarComponent from '../navbar/navbar';
 import LeftGlass from '../../assets/images/PaharVerde.png';
 import RightGlass from '../../assets/images/PaharAlbastru.png';
 
-import SpawnGlass from './functions.js';
-
+import { SpawnLeftGlass, SpawnRightGlass } from './functions.js';
 import './testeaza.css';
 
 export default function Testeaza() {
-    const [name, setName] = useState("");
+    const [leftGlassName, setLeftGlassName] = useState("");
+    const [rightGlassName, setRightGlassName] = useState("");
+
+    const [leftElthPName, setLeftElthPName] = useState("");
+    const [rightElthPName, setRightElthPName] = useState("");
+
     useEffect(()=>{
-		setName("Undefined");
+		setLeftGlassName("Undefined"); setRightGlassName("Undefined");
+        setLeftElthPName("Undefined"); setRightElthPName("Undefined");
 	}, [])
 
     return (
@@ -36,22 +41,22 @@ export default function Testeaza() {
                             <div className="mb-2 text-center pahare-dropdown">
                                 <ButtonGroup>
                                     <DropdownButton variant="success" id="dropdown-basic-button" title="Pahare" drop="end">
-                                        <Dropdown.Item eventKey="1" onClick={() => setName("Al")}><Latex>$Al(NO_3)_3$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="2" onClick={() => setName("Ag")}><Latex>$AgNO_3$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="3"><Latex>$Mg(NO_3)_2$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="4"><Latex>$Cu(NO_3)_2$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="5"><Latex>$Sn(NO_3)_2$</Latex></Dropdown.Item>
+                                        <Dropdown.Item eventKey="1" onClick={() => setLeftGlassName(<Latex>$Al(NO_3)_3$</Latex>)}><Latex>$Al(NO_3)_3$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setLeftGlassName(<Latex>$AgNO_3$</Latex>)}><Latex>$AgNO_3$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setLeftGlassName(<Latex>$Mg(NO_3)_2$</Latex>)}><Latex>$Mg(NO_3)_2$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setLeftGlassName(<Latex>$Cu(NO_3)_2$</Latex>)}><Latex>$Cu(NO_3)_2$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setLeftGlassName(<Latex>$Sn(NO_3)_2$</Latex>)}><Latex>$Sn(NO_3)_2$</Latex></Dropdown.Item>
                                     </DropdownButton>
                                 </ButtonGroup>
                             </div>
                             <div className="mb-2 text-center placute-dropdown">
                                 <ButtonGroup>
                                     <DropdownButton variant="primary" id="dropdown-basic-button" title="Plăcuțe" drop="end">
-                                        <Dropdown.Item eventKey="1"><Latex>$Al\;(Aluminiu)$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="2"><Latex>$Ag\;(Argint)$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="3"><Latex>$Mg\;(Magneziu)$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="4"><Latex>$Cu\;(Cupru)$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="5"><Latex>$Sn\;(Staniu)$</Latex></Dropdown.Item>
+                                        <Dropdown.Item eventKey="1" onClick={() => setLeftElthPName(<Latex>$Al\;(Aluminiu)$</Latex>)}><Latex>$Al\;(Aluminiu)$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setLeftElthPName(<Latex>$Ag\;(Argint)$</Latex>)}><Latex>$Ag\;(Argint)$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setLeftElthPName(<Latex>$Mg\;(Magneziu)$</Latex>)}><Latex>$Mg\;(Magneziu)$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setLeftElthPName(<Latex>$Cu\;(Cupru)$</Latex>)}><Latex>$Cu\;(Cupru)$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setLeftElthPName(<Latex>$Sn\;(Staniu)$</Latex>)}><Latex>$Sn\;(Staniu)$</Latex></Dropdown.Item>
                                     </DropdownButton>
                                 </ButtonGroup>
                             </div>
@@ -62,7 +67,7 @@ export default function Testeaza() {
                             <img className="chem-glass" src={LeftGlass} alt="Glass"/>
 
                             <div className="text-center">
-                                <Button variant="danger">Resetează</Button>
+                                <Button variant="danger" onClick={() => setLeftGlassName("Undefined")}>Resetează</Button>
                             </div>
                         </div>
                     </Col>
@@ -73,13 +78,13 @@ export default function Testeaza() {
                             <Row>
                                 <Col sm={6}>
                                     <div className="glass-box">
-                                        <SpawnGlass name={name}/>
+                                        <SpawnLeftGlass name={leftGlassName}/>
                                     </div>
                                 </Col>
                                 
                                 <Col sm={6}>
                                     <div className="glass-box">
-                                        <SpawnGlass name={name}/>
+                                        <SpawnRightGlass name={rightGlassName}/>
                                     </div>
                                 </Col>
                             </Row>
@@ -87,24 +92,28 @@ export default function Testeaza() {
                             <Row>
                                 <Col sm={3}>
                                     <div className="pahar-box">
-                                        {name}
+                                        {leftGlassName}
                                     </div>
                                 </Col>
                                 <Col sm={3}>
                                     <div className="pile-box">
-                                        {name}
+                                        {leftElthPName}
                                     </div>
                                 </Col>
                                 <Col sm={3}>
                                     <div className="pahar-box">
-                                        {name}
+                                        {rightGlassName}
                                     </div>
                                 </Col>
                                 <Col sm={3}>
                                     <div className="pile-box">
-                                        {name}
+                                        {rightElthPName}
                                     </div>
                                 </Col>
+                            </Row>
+
+                            <Row>
+                                <div className="text-center">Testeaza</div>
                             </Row>
                         </div>
                     </Col>  
@@ -114,34 +123,34 @@ export default function Testeaza() {
                         <div className="menu-selector">
                             <div className="mb-2 text-center pahare-dropdown">
                                 <ButtonGroup>
-                                    <DropdownButton variant="success" id="dropdown-basic-button" title="Pahare" drop="start">
-                                        <Dropdown.Item eventKey="1"><Latex>$Al(NO_3)_3$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="2"><Latex>$Ag(NO_3)$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="3"><Latex>$Mg(NO_3)_2$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="4"><Latex>$Cu(NO_3)_2$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="5"><Latex>$Sn(NO_3)_2$</Latex></Dropdown.Item>
+                                <DropdownButton variant="success" id="dropdown-basic-button" title="Pahare" drop="start">
+                                        <Dropdown.Item eventKey="1" onClick={() => setRightGlassName(<Latex>$Al(NO_3)_3$</Latex>)}><Latex>$Al(NO_3)_3$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setRightGlassName(<Latex>$AgNO_3$</Latex>)}><Latex>$AgNO_3$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setRightGlassName(<Latex>$Mg(NO_3)_2$</Latex>)}><Latex>$Mg(NO_3)_2$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setRightGlassName(<Latex>$Cu(NO_3)_2$</Latex>)}><Latex>$Cu(NO_3)_2$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setRightGlassName(<Latex>$Sn(NO_3)_2$</Latex>)}><Latex>$Sn(NO_3)_2$</Latex></Dropdown.Item>
                                     </DropdownButton>
                                 </ButtonGroup>
                             </div>
                             <div className="mb-2 text-center placute-dropdown">
                                 <ButtonGroup>
                                     <DropdownButton variant="primary" id="dropdown-basic-button" title="Plăcuțe" drop="start">
-                                        <Dropdown.Item eventKey="1"><Latex>$Al\;(Aluminiu)$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="2"><Latex>$Ag\;(Argint)$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="3"><Latex>$Mg\;(Magneziu)$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="4"><Latex>$Cu\;(Cupru)$</Latex></Dropdown.Item>
-                                        <Dropdown.Item eventKey="5"><Latex>$Sn\;(Staniu)$</Latex></Dropdown.Item>
+                                    <Dropdown.Item eventKey="1" onClick={() => setRightElthPName(<Latex>$Al\;(Aluminiu)$</Latex>)}><Latex>$Al\;(Aluminiu)$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setRightElthPName(<Latex>$Ag\;(Argint)$</Latex>)}><Latex>$Ag\;(Argint)$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setRightElthPName(<Latex>$Mg\;(Magneziu)$</Latex>)}><Latex>$Mg\;(Magneziu)$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setRightElthPName(<Latex>$Cu\;(Cupru)$</Latex>)}><Latex>$Cu\;(Cupru)$</Latex></Dropdown.Item>
+                                        <Dropdown.Item onClick={() => setRightElthPName(<Latex>$Sn\;(Staniu)$</Latex>)}><Latex>$Sn\;(Staniu)$</Latex></Dropdown.Item>
                                     </DropdownButton>
                                 </ButtonGroup>
                             </div>
                             <div className="mb-2 text-center">
-                                <Button variant="secondary">Punte de sare</Button>
+                                <Button variant="secondary">Sterge puntea</Button>
                             </div> 
 
                             <img className="chem-glass" src={RightGlass} alt="Glass"/>
 
                             <div className="text-center">
-                                <Button variant="danger">Resetează</Button>
+                                <Button variant="danger" onClick={() => setRightGlassName("Undefined")}>Resetează</Button>
                             </div>
                         </div>
                     </Col>

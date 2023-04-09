@@ -51,7 +51,7 @@
 .glass-box {
     height: 250px;
 
-    margin-top: 30%;
+    margin-top: 20%;
     text-align: center;
 
     border: solid 0.1rem #98cee6;
@@ -60,16 +60,26 @@
 
 .pahar-box {
     margin: 10px;
-    text-align: center;
+    padding: 10px;
     
+    text-align: center;
+    font-family: 'Comic Sans';
+    font-size: 18px;
+
+    border-radius: 30px;
     border: solid 0.1rem #98cee6;
     border-color: purple;
 }
 
 .pile-box {
     margin: 10px;
+    padding: 10px;
+    
     text-align: center;
+    font-family: 'Comic Sans';
+    font-size: 18px;
 
+    border-radius: 30px;
     border: solid 0.1rem #98cee6;
     border-color: orange;
 }
