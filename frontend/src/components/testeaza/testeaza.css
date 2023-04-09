@@ -50,7 +50,7 @@
 .glass-box {
     height: 250px;
 
-    margin-top: 20%;
+    margin-top: 30%;
     text-align: center;
 
     border: solid 0.1rem #98cee6;
@@ -86,12 +86,28 @@
 .chem-glass {
     width: 150px;
     height: auto;
+    margin: 10px;
 
     justify-content: center !important;
     align-items: center !important;
-
-    margin: 10px;
 }
+
+.battery-box {
+    width: 560px !important;
+
+    top: 25%; right: 25%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-51%, -35%); /*schimb adancimea*/
+    
+    justify-content: center;
+    object-fit: cover;
+    position: absolute; 
+
+    padding: 0px !important;
+    margin-right: 0px;
+}
+
 
 @media only screen and (min-width: 375px) and (max-width: 812px) {
     .work-space{    

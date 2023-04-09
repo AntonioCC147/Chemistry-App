@@ -16,7 +16,7 @@ import NavbarComponent from '../navbar/navbar';
 import LeftGlass from '../../assets/images/PaharVerde.png';
 import RightGlass from '../../assets/images/PaharAlbastru.png';
 
-import { SpawnLeftGlass, SpawnRightGlass, CheckInputs, SpawnSaltDeck } from './functions.js';
+import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, SpawnSaltDeck, CheckInputs } from './functions.js';
 import './testeaza.css';
 
 export default function Testeaza() {
@@ -78,15 +78,18 @@ export default function Testeaza() {
 
                     <Col sm={8}>
                         <div className="work-space-box">
-                            <Row>
-                                <SpawnSaltDeck name={saltDeck}/>
+                            <Row className="text-center">
+                                <VerifyBattery
+                                    glassLeft={leftGlassName} elthPLeft={leftElthPName}
+                                    glassRight={rightGlassName} elthPRight={rightElthPName}
+                                />
+                            </Row>
                                 <CheckInputs
                                     verify={saltDeck}
                                     glassLeft={leftGlassName} elthPLeft={leftElthPName}
                                     glassRight={rightGlassName} elthPRight={rightElthPName}
                                 />
-                            </Row>
-
+                            
                             <Row>
                                 <Col sm={6}>
                                     <div className="glass-box">

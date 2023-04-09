@@ -1,6 +1,8 @@
+import UndefinedGlass from '../../assets/images/UndefinedGlass.png';
 import LeftGlass from '../../assets/images/PaharVerde.png';
 import RightGlass from '../../assets/images/PaharAlbastru.png';
-import UndefinedGlass from '../../assets/images/UndefinedGlass.png';
+
+import Battery from '../../assets/images/Battery.png';
 
 const SpawnLeftGlass = ({ name }) => {
     if(name !== "Undefined")
@@ -24,6 +26,13 @@ const SpawnRightGlass = ({ name }) => {
     );
 }
 
+const VerifyBattery = ({ glassLeft, elthPLeft, glassRight, elthPRight }) => {
+    if(glassLeft !== "Undefined" && elthPLeft !== "Undefined" && glassRight !== "Undefined" && elthPRight !== "Undefined")
+        return (
+            <img className="battery-box" src={Battery} alt="Battery"/>
+        )
+}
+
 const CheckInputs = ({ verify, glassLeft, elthPLeft, glassRight, elthPRight }) => {
     if(verify === "Exist")
         if(glassLeft !== "Undefined" && elthPLeft !== "Undefined" && glassRight !== "Undefined" && elthPRight !== "Undefined")
@@ -40,4 +49,4 @@ const SpawnSaltDeck = ({ name }) => {
         else return ( <>EXIST</>);
 }
 
-export { SpawnLeftGlass, SpawnRightGlass, CheckInputs, SpawnSaltDeck };
+export { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, SpawnSaltDeck, CheckInputs, };
