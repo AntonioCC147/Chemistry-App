@@ -6,7 +6,7 @@ import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
-import React from '../../assets/images/Reactivitate.gif';
+import React from '../../assets/images/other/Reactivitate.gif';
 
 export default function Reactivitate() {
     return (

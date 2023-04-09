@@ -13,10 +13,10 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 
 import NavbarComponent from '../navbar/navbar';
 
-import LeftGlass from '../../assets/images/PaharVerde.png';
-import RightGlass from '../../assets/images/PaharAlbastru.png';
+import LeftGlass from '../../assets/images/pahare/PaharVerde.png';
+import RightGlass from '../../assets/images/pahare/PaharAlbastru.png';
 
-import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, SpawnSaltDeck, CheckInputs } from './functions.js';
+import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs } from './functions.js';
 import './testeaza.css';
 
 export default function Testeaza() {
@@ -74,7 +74,6 @@ export default function Testeaza() {
                             </div>
                         </div>
                     </Col>
-                    
 
                     <Col sm={8}>
                         <div className="work-space-box">
@@ -89,17 +88,18 @@ export default function Testeaza() {
                                     glassLeft={leftGlassName} elthPLeft={leftElthPName}
                                     glassRight={rightGlassName} elthPRight={rightElthPName}
                                 />
-                            
                             <Row>
                                 <Col sm={6}>
                                     <div className="glass-box">
                                         <SpawnLeftGlass name={leftGlassName}/>
+                                        <VerifyPila verify={leftElthPName} type={"left"}/>
                                     </div>
                                 </Col>
                                 
                                 <Col sm={6}>
                                     <div className="glass-box">
                                         <SpawnRightGlass name={rightGlassName}/>
+                                        <VerifyPila verify={rightElthPName} type={"right"}/>
                                     </div>
                                 </Col>
                             </Row>
@@ -107,24 +107,32 @@ export default function Testeaza() {
                             <Row>
                                 <Col sm={3}>
                                     <div className="pahar-box">{leftGlassName}</div>
+                                    <div className="info-text">Pahar</div>
                                 </Col>
                                 <Col sm={3}>
                                     <div className="pile-box">{leftElthPName}</div>
+                                    <div className="info-text">Pilă</div>
                                 </Col>
                                 <Col sm={3}>
                                     <div className="pahar-box">{rightGlassName}</div>
+                                    <div className="info-text">Pahar</div>
                                 </Col>
                                 <Col sm={3}>
                                     <div className="pile-box">{rightElthPName}</div>
+                                    <div className="info-text">Pilă</div>
                                 </Col>
                             </Row>
 
                             <Row>
-                                <div className="text-center">Testeaza</div>
+                                <Col sm={6}>
+                                    <div className="text-center">Șterge</div>
+                                </Col>
+                                <Col sm={6}>
+                                    <div className="text-center">Testeaza</div>
+                                </Col>
                             </Row>
                         </div>
-                    </Col>  
-
+                    </Col>
 
                     <Col sm={2}>
                         <div className="menu-selector">

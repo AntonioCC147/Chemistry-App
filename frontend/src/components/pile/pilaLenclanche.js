@@ -8,7 +8,7 @@ import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
-import PilaL from '../../assets/images/PilaL.jpg';
+import PilaL from '../../assets/images/pile/PilaL.jpg';
 
 export default function PilaLenclanche() {
     const twoplus = `$\\! ^{2+}$`; const s = `$_{(s)} \\;$`; const fourplus = `$\\! _4^+$`;

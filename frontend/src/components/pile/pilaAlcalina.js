@@ -6,7 +6,7 @@ import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
-import PilaA from '../../assets/images/PilaA.svg';
+import PilaA from '../../assets/images/pile/PilaA.svg';
 
 export default function PilaAlcalina() {
     return (

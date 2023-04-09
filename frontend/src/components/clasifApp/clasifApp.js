@@ -6,7 +6,7 @@ import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
-import Aplicatii from '../../assets/images/Aplicatii.jpg';
+import Aplicatii from '../../assets/images/other/Aplicatii.jpg';
 import './clasifApp.css';
 
 export default function clasifApp() {

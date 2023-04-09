@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Logo from './assets/images/Logo.png';
+import Logo from './assets/images/icons/Logo.png';
 
 import './App.css';
 import Acasa from "./components/home/home";
