@@ -1,8 +1,36 @@
 .footer {
-    position: relative;
-    bottom: 0px;
     margin-top: 10px;
   
-    font-family: 'Comic Sans';
-    font-size: 18px;
+    font-family: 'Comic Sans' !important;
+    font-size: 20px;
+
+    background-color: rgb(128, 128, 128);
+}
+
+.icon-left-img {
+    margin: 10px;
+
+    width: 100px;
+    height: auto;
+}
+
+.icon-right-img {
+    margin-right: 10px;
+
+    width: 100px;
+    height: auto;
+}
+
+.text-align {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .icon-left-img {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .icon-right-img {
+        margin: auto;
+    }
 }

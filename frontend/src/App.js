@@ -24,8 +24,8 @@ export default function App() {
     <div className="background">
       <div className="container-xl">
         <Row className="design-navbar">
-          <Col sm={2}>
-            <a href="/"><img src={Logo} alt="Logo"/></a>
+          <Col sm={2} className="text-center">
+            <a href="/"><img className="logo" src={Logo} alt="Logo"/></a>
           </Col>
           <Col sm={10}>
             <p className="principal-title">Pile Electrice</p>
