@@ -34,7 +34,7 @@ export default function NavbarComponent() {
           </Nav>
           <div className="test-button">
             <Nav>
-              <Nav.Link style={{ textAlign: 'center', color: '#f33333', fontWeight: 'bold' }} href="/testeaza">
+              <Nav.Link style={{ textAlign: 'center', color: '#210062', fontWeight: 'bold' }} href="/testeaza">
                 Testează
               </Nav.Link>
             </Nav>

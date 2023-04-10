@@ -125,10 +125,10 @@ export default function Testeaza() {
 
                             <Row>
                                 <Col sm={6}>
-                                    <div className="text-center">Șterge</div>
+                                    <div className="reset-button">Șterge</div>
                                 </Col>
                                 <Col sm={6}>
-                                    <div className="text-center">Testeaza</div>
+                                    <div className="send-button">Testeaza</div>
                                 </Col>
                             </Row>
                         </div>
@@ -170,6 +170,7 @@ export default function Testeaza() {
                         </div>
                     </Col>
                 </Row>
+                <br/>
             </Container>
         </>
     )

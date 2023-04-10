@@ -21,14 +21,13 @@
 
     text-align: justify;
     
-    font-family: 'Comic Sans';
+    font-family: 'Roboto';
     font-size: 20px;
 
-    border: solid 0.3em #56c2ec;
     border-radius: 10px;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 
-    background-color: #56c2ec;
+    background-color: #F9F7F7;
 }
 
 .work-space-box {
@@ -37,14 +36,15 @@
     min-height: 500px;
 
     margin: 15px 0 15px 0;
-    padding: 20px 20px 10px 20px;
-    border: solid 0.1rem #98cee6;
+    padding: 20px 20px 20px 20px;
+    /*border: solid 0.1rem #98cee6;*/
+    border-radius: 30px;
 
     position: relative;
     transform: translate(-50%,-50%);
     
-    background: #b6e4f8;
     filter: drop-shadow(0 1px 16px #bdbdbd);
+    background-color: #F1FAFB;
 }
 
 .glass-box {
@@ -59,12 +59,11 @@
     padding: 10px;
     
     text-align: center;
-    font-family: 'Comic Sans';
+    font-family: 'Roboto';
     font-size: 18px;
 
     border-radius: 30px;
-    border: solid 0.1rem #98cee6;
-    border-color: purple;
+    background-color: #9091c7
 }
 
 .pile-box {
@@ -72,12 +71,11 @@
     padding: 10px;
     
     text-align: center;
-    font-family: 'Comic Sans';
+    font-family: 'Roboto';
     font-size: 18px;
 
     border-radius: 30px;
-    border: solid 0.1rem #98cee6;
-    border-color: orange;
+    background-color: #92b0dc;
 }
 
 .chem-glass {
@@ -124,8 +122,36 @@
 
 .info-text {
     text-align: center;
-    font-family: 'Comic Sans';
+    font-family: 'Roboto';
     font-size: 18px;
+}
+
+.reset-button {
+    text-align: center;
+
+    margin: 20px 25% 0px 25%;
+    padding: 10px;
+    
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+
+    border-radius: 30px;
+    background-color: #DF2E38;
+}
+
+.send-button {
+    text-align: center;
+
+    margin: 20px 25% 0px 25%;
+    padding: 10px;
+    
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+
+    border-radius: 30px;
+    background-color: #5D9C59;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 812px) {
