@@ -77,6 +77,7 @@ export default function Testeaza() {
 
                     <Col sm={8}>
                         <div className="work-space-box">
+                            <SpawnSaltDeck name={saltDeck}/>
                             <Row className="text-center">
                                 <VerifyBattery
                                     glassLeft={leftGlassName} elthPLeft={leftElthPName}
@@ -106,20 +107,16 @@ export default function Testeaza() {
 
                             <Row>
                                 <Col sm={3}>
-                                    <div className="pahar-box">{leftGlassName}</div>
-                                    <div className="info-text">Pahar</div>
+                                    <div className="pahar-box">Pahar<br/>{leftGlassName}</div>
                                 </Col>
                                 <Col sm={3}>
-                                    <div className="pile-box">{leftElthPName}</div>
-                                    <div className="info-text">Pilă</div>
+                                    <div className="pile-box">Plăcuță<br/>{leftElthPName}</div>
                                 </Col>
                                 <Col sm={3}>
-                                    <div className="pahar-box">{rightGlassName}</div>
-                                    <div className="info-text">Pahar</div>
+                                    <div className="pahar-box">Pahar<br/>{rightGlassName}</div>
                                 </Col>
                                 <Col sm={3}>
-                                    <div className="pile-box">{rightElthPName}</div>
-                                    <div className="info-text">Pilă</div>
+                                    <div className="pile-box">Plăcuță<br/>{rightElthPName}</div>
                                 </Col>
                             </Row>
 

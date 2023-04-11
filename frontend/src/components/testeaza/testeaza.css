@@ -84,10 +84,26 @@
     align-items: center !important;
 }
 
-.battery-box {
+.spawn-battery {
     width: 590px !important;
 
     top: 25%; right: 25%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -35%); /*schimb adancimea*/
+    
+    object-fit: cover;
+    position: absolute; 
+
+    padding: 0px !important;
+    margin-right: 0px;
+}
+
+.spawn-salty-deck {
+    width: 430px;
+    height: auto;
+
+    top: 35%; right: 25%;
     transform: translateY(-50%);
     left: 50%;
     transform: translate(-50%, -35%); /*schimb adancimea*/

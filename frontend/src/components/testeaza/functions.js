@@ -2,6 +2,8 @@ import UndefinedGlass from '../../assets/images/pahare/UndefinedGlass.png';
 import LeftGlass from '../../assets/images/pahare/PaharVerde.png';
 import RightGlass from '../../assets/images/pahare/PaharAlbastru.png';
 
+import SaltyDeck from '../../assets/images/other/SaltyDeck.png';
+
 import Battery from '../../assets/images/other/Battery.png';
 import Pile from '../../assets/images/pile/PilaTesteaza.png';
 
@@ -30,7 +32,7 @@ const SpawnRightGlass = ({ name }) => {
 const VerifyBattery = ({ glassLeft, elthPLeft, glassRight, elthPRight }) => {
     if(glassLeft !== "Undefined" && elthPLeft !== "Undefined" && glassRight !== "Undefined" && elthPRight !== "Undefined")
         return (
-            <img className="battery-box" src={Battery} alt="Battery"/>
+            <img className="spawn-battery" src={Battery} alt="Battery"/>
         )
 }
 
@@ -50,15 +52,16 @@ const CheckInputs = ({ verify, glassLeft, elthPLeft, glassRight, elthPRight }) =
         if(glassLeft !== "Undefined" && elthPLeft !== "Undefined" && glassRight !== "Undefined" && elthPRight !== "Undefined")
             return (
                 <>
-                    Abc
+                    All is good
                 </>
             )
 }
 
 const SpawnSaltDeck = ({ name }) => {
-    if(name === "None")
-        return ( <>NONE</>);
-        else return ( <>EXIST</>);
+    if(name !== "None")
+        return ( 
+            <img className="spawn-salty-deck" src={SaltyDeck} alt="Punte de sare"/>
+        );
 }
 
 export { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs };
