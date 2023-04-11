@@ -16,12 +16,10 @@
     border-radius: 0px 0px 20px 20px;
 
     filter: drop-shadow(0 1px 16px #bdbdbd);
-    /*background-color: white;*/
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .principal-title {
-    font-family: 'Comic Sans';
     font-size: 50px;
     font-weight: 700;
 
@@ -33,7 +31,6 @@
 }
 
 .secundar-title {
-    font-family: 'Comic Sans';
     font-size: 20px;
     font-weight: 700;
     
@@ -54,7 +51,6 @@
 }
 
 .cuprins-title {
-    font-family: 'Comic Sans';
     font-size: 25px;
     font-weight: bold;
 
@@ -63,7 +59,6 @@
 }
 
 .cuprins-text {
-    font-family: 'Comic Sans';
     font-size: 20px;
     font-weight: 500;
 
