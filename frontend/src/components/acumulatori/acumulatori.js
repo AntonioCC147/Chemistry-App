@@ -8,6 +8,11 @@ import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
+import Battery1 from '../../assets/images/other/Battery1.png';
+import Battery2 from '../../assets/images/other/Battery2.png';
+
+import './acumulatori.css';
+
 export default function Acumulatori() {
     const s = `$_{(s)} \\;$`; const twos = `$_{2(s)} \\;$`; const fours = `$_{4(s)} \\;$`;
     const fourtwominus = `$_4^{2-} \\;$`;
@@ -18,22 +23,23 @@ export default function Acumulatori() {
             <Container className="container-xl footer-fix">
                 <Row>
                     <Col sm={4}>
-                    <LeftBox information={
-                        <>
-                            <p className="cuprins-title">Lore Ipsum:</p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                            PageMaker including versions of Lorem Ipsum.
-                        </>
-                    }/>
+                        <LeftBox information={
+                            <>
+                                <p className="cuprins-title">Lore Ipsum:</p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions of Lorem Ipsum.
+                            </>
+                        }/>
+                        <img className="battery1-fix" src={Battery1} alt="Baterie"/>
+                        <img className="battery2-fix" src={Battery2} alt="Baterie"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={
                             <>
-                                
                                 <p className="cuprins-title">Acumulatori:</p>
                                 <p>Acumulatorul cu plumb este o pila cu electrolit lichid realizat pentru prima oara, in anul 1859, de
                                     inginerul francez Gaston Planté.

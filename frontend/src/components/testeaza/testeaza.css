@@ -103,7 +103,7 @@
     width: 430px;
     height: auto;
 
-    top: 35%; right: 25%;
+    top: 32%; right: 25%;
     transform: translateY(-50%);
     left: 50%;
     transform: translate(-50%, -35%); /*schimb adancimea*/
@@ -136,6 +136,12 @@
 .info-text {
     text-align: center;
     font-size: 18px;
+}
+
+.concentratia-text {
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
 }
 
 .reset-button {

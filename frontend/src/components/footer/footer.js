@@ -19,7 +19,8 @@ export default function Footer() {
                         <p className="">
                             &copy; {new Date().getFullYear()} Copyright
                             <span style={{margin: 'auto', height: '100px'}}> | </span>
-                            Crantea Antonio Cristian, student la "Facultatea de Automatică și Calculatoare"
+                            <a href="https://www.instagram.com/antoniocc147/?hl=ro"style={{ textAlign: 'center', textDecoration: 'none', color: '#210062', fontWeight: 'bold' }}>
+                                Crantea Antonio Cristian</a>, student la "Facultatea de Automatică și Calculatoare"
                         </p>
                         <p>
                             Universitatea Politehnică din București - Sesiunea de Comunicări Științifice

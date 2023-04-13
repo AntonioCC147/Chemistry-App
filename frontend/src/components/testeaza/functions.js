@@ -1,27 +1,32 @@
 import UndefinedGlass from '../../assets/images/pahare/UndefinedGlass.png';
-import LeftGlass from '../../assets/images/pahare/PaharVerde.png';
-import RightGlass from '../../assets/images/pahare/PaharAlbastru.png';
+
+import PaharVerde from '../../assets/images/pahare/PaharVerde.png';
+import PaharAlbastru from '../../assets/images/pahare/PaharAlbastru.png';
 
 import SaltyDeck from '../../assets/images/other/SaltyDeck.png';
 
 import Battery from '../../assets/images/other/Battery.png';
 import Pile from '../../assets/images/pile/PilaTesteaza.png';
 
-const SpawnLeftGlass = ({ name }) => {
-    if(name !== "Undefined")
-        return (
-            <img className="chem-glass" src={LeftGlass} alt="Glass"/>
-    );
-    else
+const SpawnLeftGlass = ({ name, type }) => {
+    if(name === "Undefined")
         return (
             <img className="chem-glass" src={UndefinedGlass} alt="Undefined Glass"/>
     );
+    else if(type === "Al")
+        return (
+            <img className="chem-glass" src={PaharVerde} alt="Glass"/>
+    );
+    else
+        return (
+            <img className="chem-glass" src={PaharVerde} alt="Glass"/>
+    )
 }
 
 const SpawnRightGlass = ({ name }) => {
     if(name !== "Undefined")
         return (
-            <img className="chem-glass" src={RightGlass} alt="Glass"/>
+            <img className="chem-glass" src={PaharAlbastru} alt="Glass"/>
     );
     else
         return (
