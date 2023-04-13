@@ -16,7 +16,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 import NavbarComponent from '../navbar/navbar';
 
-import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs } from './functions.js';
+import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs} from './functions.js';
 import './testeaza.css';
 
 export default function Testeaza() {
