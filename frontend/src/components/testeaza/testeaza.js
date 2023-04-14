@@ -55,14 +55,14 @@ export default function Testeaza() {
                                         <Dropdown.Item
                                             onClick={() => {setLeftGlassName(<Latex>$AgNO_3$</Latex>); setVerifyLeftGlass("Ag")}}><Latex>$AgNO_3$</Latex>
                                         </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftGlassName(<Latex>$Mg(NO_3)_2$</Latex>); setVerifyLeftGlass("Mg")}}><Latex>$Mg(NO_3)_2$</Latex>
-                                        </Dropdown.Item>
                                         <Dropdown.Item 
                                             onClick={() => {setLeftGlassName(<Latex>$Cu(NO_3)_2$</Latex>); setVerifyLeftGlass("Cu")}}><Latex>$Cu(NO_3)_2$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item
                                             onClick={() => {setLeftGlassName(<Latex>$Sn(NO_3)_2$</Latex>); setVerifyLeftGlass("Sn")}}><Latex>$Sn(NO_3)_2$</Latex>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item
+                                            onClick={() => {setLeftGlassName(<Latex>$Ni(NO_3)_2$</Latex>); setVerifyLeftGlass("Ni")}}><Latex>$Ni(NO_3)_2$</Latex>
                                         </Dropdown.Item>
                                     </DropdownButton>
                                 </ButtonGroup>
@@ -196,6 +196,12 @@ export default function Testeaza() {
                                         </Dropdown.Item>
                                         <Dropdown.Item
                                             onClick={() => {setRightGlassName(<Latex>$Sn(NO_3)_2$</Latex>); setVerifyRightGlass("Sn")}}><Latex>$Sn(NO_3)_2$</Latex>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item
+                                            onClick={() => {setRightGlassName(<Latex>$Fe(NO_3)_2$</Latex>); setVerifyRightGlass("Fe")}}><Latex>$Fe(NO_3)_2$</Latex>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item
+                                            onClick={() => {setRightGlassName(<Latex>$Ni(NO_3)_2$</Latex>); setVerifyRightGlass("Ni")}}><Latex>$Ni(NO_3)_2$</Latex>
                                         </Dropdown.Item>
                                     </DropdownButton>
                                 </ButtonGroup>

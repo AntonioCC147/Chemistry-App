@@ -32,7 +32,7 @@ export default function Reactivitate() {
                             <>
                                 <p className="cuprins-title">Seria de reactivitate:</p>
                                 <div className="text-center">
-                                    <img className="img-fix" src={React} alt="Reactivitate"/>
+                                    <img style={{width: '800px', height: 'auto'}} src={React} alt="Reactivitate"/>
                                 </div>
                                 <p>Metalele care in seria de activitate se gasesc inaintea hidrogenului joaca rol de anod, iar cele de dupa
                                     hidrogen joaca rol de catod.
