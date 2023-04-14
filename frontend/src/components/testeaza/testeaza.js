@@ -11,13 +11,13 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-
 import NavbarComponent from '../navbar/navbar';
 
-import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs} from './functions.js';
+import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs } from './functions.js';
 import './testeaza.css';
+
+import Catod from '../../assets/images/other/Catod.png';
+import Anod from '../../assets/images/other/Anod.png';
 
 export default function Testeaza() {
     const [leftGlassName, setLeftGlassName] = useState("");
@@ -27,15 +27,16 @@ export default function Testeaza() {
 
     const [leftElthPName, setLeftElthPName] = useState("");
     const [rightElthPName, setRightElthPName] = useState("");
-    const [verifyLeftElthPName, setverifyLeftElthPName] = useState("");
+    const [verifyLeftElthPName, setVerifyLeftElthPName] = useState("");
     const [verifyRightElthPName, setVerifyRightElthPName] = useState("");
 
     const [saltDeck, setSaltDeck] = useState("");
+    const [verifySaltDeck, setVerifytSaltDeck] = useState("");
 
     useEffect(()=>{
-		setLeftGlassName("Undefined"); setRightGlassName("Undefined"); setVerifyLeftGlass("Undefined");
-        setLeftElthPName("Undefined"); setRightElthPName("Undefined"); setVerifyRightGlass("Undefined");
-        setSaltDeck("None");
+		setLeftGlassName("Undefined"); setLeftElthPName("Undefined"); setVerifyLeftGlass("Undefined"); setVerifyLeftElthPName("Undefined");
+        setRightGlassName("Undefined"); setRightElthPName("Undefined"); setVerifyRightGlass("Undefined"); setVerifyRightElthPName("Undefined");
+        setSaltDeck("None"); setVerifytSaltDeck("None");
 	}, [])
 
     return (
@@ -70,35 +71,26 @@ export default function Testeaza() {
                                 <ButtonGroup>
                                     <DropdownButton variant="primary" id="dropdown-basic-button" title="Plăcuțe" drop="end">
                                         <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Al\;(Aluminiu)$</Latex>); setverifyLeftElthPName("Al")}}><Latex>$Al\;(Aluminiu)$</Latex>
+                                            onClick={() => {setLeftElthPName(<Latex>$Al\;(Aluminiu)$</Latex>); setVerifyLeftElthPName("Al")}}><Latex>$Al\;(Aluminiu)$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Ag\;(Argint)$</Latex>); setverifyLeftElthPName("Ag")}}><Latex>$Ag\;(Argint)$</Latex>
+                                            onClick={() => {setLeftElthPName(<Latex>$Ag\;(Argint)$</Latex>); setVerifyLeftElthPName("Ag")}}><Latex>$Ag\;(Argint)$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Mg\;(Magneziu)$</Latex>); setverifyLeftElthPName("Mg")}}><Latex>$Mg\;(Magneziu)$</Latex>
+                                            onClick={() => {setLeftElthPName(<Latex>$Mg\;(Magneziu)$</Latex>); setVerifyLeftElthPName("Mg")}}><Latex>$Mg\;(Magneziu)$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Cu\;(Cupru)$</Latex>); setverifyLeftElthPName("Cu")}}><Latex>$Cu\;(Cupru)$</Latex>
+                                            onClick={() => {setLeftElthPName(<Latex>$Cu\;(Cupru)$</Latex>); setVerifyLeftElthPName("Cu")}}><Latex>$Cu\;(Cupru)$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Sn\;(Staniu)$</Latex>); setverifyLeftElthPName("Sn")}}><Latex>$Sn\;(Staniu)$</Latex>
+                                            onClick={() => {setLeftElthPName(<Latex>$Sn\;(Staniu)$</Latex>); setVerifyLeftElthPName("Sn")}}><Latex>$Sn\;(Staniu)$</Latex>
                                         </Dropdown.Item>
                                     </DropdownButton>
                                 </ButtonGroup>
                             </div>
-                            
-
-                            <InputGroup className="mb-3">
-                                <p className="concentratia-text">Concentrația (mol/litru)</p>
-                                <InputGroup.Text>$</InputGroup.Text>
-                                <Form.Control aria-label="Amount (to the nearest dollar)" />
-                                <InputGroup.Text>.00</InputGroup.Text>
-                            </InputGroup>
-
 
                             <div className="mb-2 text-center">
-                                <Button variant="secondary" onClick={() => setSaltDeck("Exist")}>Punte de sare</Button>
+                                <Button variant="secondary" onClick={() => {setSaltDeck("Exist"); setVerifytSaltDeck("Exist")}}>Punte de sare</Button>
                             </div>
 
                             <div className="text-center">
@@ -116,15 +108,18 @@ export default function Testeaza() {
                                     glassRight={rightGlassName} elthPRight={rightElthPName}
                                 />
                             </Row>
-                                <CheckInputs
-                                    verify={saltDeck}
-                                    glassLeft={leftGlassName} verifyLeftGlass={verifyLeftGlass}
-                                    elthPLeft={leftElthPName} verifyLeftElthPName={verifyLeftElthPName}
-                                    glassRight={rightGlassName} verifyRightGlass={verifyRightGlass}
-                                    elthPRight={rightElthPName} verifyRightElthPName={verifyRightElthPName}
-                                />
+
                             <Row>
                                 <Col sm={6}>
+                                    <Row>
+                                        <Col sm={6} >
+                                            <img className="catod" src={Catod} alt="Catod"/>
+                                        </Col>
+                                        <Col sm={6}>
+                                            <img className="anod" src={Anod} alt="Anod"/>
+                                        </Col>
+                                    </Row>
+
                                     <div className="glass-box">
                                         <SpawnLeftGlass name={leftGlassName} type={verifyLeftGlass}/>
                                         <VerifyPila verify={leftElthPName} type={"left"}/>
@@ -156,10 +151,27 @@ export default function Testeaza() {
 
                             <Row>
                                 <Col sm={6}>
-                                    <div className="reset-button">Șterge</div>
+                                    <div className="reset-button">
+                                        <Button
+                                            onClick={() => {
+                                                setLeftGlassName("Undefined"); setLeftElthPName("Undefined");
+                                                setRightGlassName("Undefined"); setRightElthPName("Undefined");
+                                                setSaltDeck("None");
+                                                }
+                                            }>
+                                            Șterge
+                                        </Button>
+                                    </div>
                                 </Col>
+                                
                                 <Col sm={6}>
-                                    <div className="send-button">Testeaza</div>
+                                    <div className="send-button">
+                                    
+                                        <Button>
+                                            <CheckInputs verify={verifyLeftGlass}/>
+                                        </Button>
+
+                                    </div>
                                 </Col>
                             </Row>
                         </div>

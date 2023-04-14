@@ -52,21 +52,20 @@ const VerifyPila = ({ verify, type }) =>  {
         );
 }
 
-const CheckInputs = ({ verify, glassLeft, elthPLeft, glassRight, elthPRight }) => {
-    if(verify === "Exist")
-        if(glassLeft !== "Undefined" && elthPLeft !== "Undefined" && glassRight !== "Undefined" && elthPRight !== "Undefined")
-            return (
-                <>
-                    All is good
-                </>
-            )
-}
-
 const SpawnSaltDeck = ({ name }) => {
     if(name !== "None")
         return ( 
             <img className="spawn-salty-deck" src={SaltyDeck} alt="Punte de sare"/>
         );
+}
+
+const CheckInputs = ({ verify }) => {
+    if(verify !== "Undefined")
+            return (
+                <>
+                    All is good
+                </>
+            )
 }
 
 export { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs };
