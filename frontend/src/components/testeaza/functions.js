@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import UndefinedGlass from '../../assets/images/pahare/UndefinedGlass.png';
+import PaharGri from '../../assets/images/pahare/PaharGri.png';
 import PaharVerde from '../../assets/images/pahare/PaharVerde.png';
 import PaharAlbastru from '../../assets/images/pahare/PaharAlbastru.png';
 
@@ -21,25 +22,37 @@ const SpawnLeftGlass = ({ name, type }) => {
         return (
             <img className="chem-glass" src={UndefinedGlass} alt="Undefined Glass"/>
     );
-    else if(type === "Al")
-        return (
-            <img className="chem-glass" src={PaharVerde} alt="Glass"/>
-    );
-    else
-        return (
-            <img className="chem-glass" src={PaharVerde} alt="Glass"/>
-    )
-}
-
-const SpawnRightGlass = ({ name }) => {
-    if(name !== "Undefined")
+    else if(type === "Cu")
         return (
             <img className="chem-glass" src={PaharAlbastru} alt="Glass"/>
     );
+    else if(type === "Ni")
+        return (
+            <img className="chem-glass" src={PaharVerde} alt="Glass"/>
+    );
     else
+        return (
+            <img className="chem-glass" src={PaharGri} alt="Glass"/>
+    )
+}
+
+const SpawnRightGlass = ({ name, type }) => {
+    if(name === "Undefined")
         return (
             <img className="chem-glass" src={UndefinedGlass} alt="Undefined Glass"/>
     );
+    else if(type === "Cu")
+        return (
+            <img className="chem-glass" src={PaharAlbastru} alt="Glass"/>
+    );
+    else if(type === "Ni")
+        return (
+            <img className="chem-glass" src={PaharVerde} alt="Glass"/>
+    );
+    else
+        return (
+            <img className="chem-glass" src={PaharGri} alt="Glass"/>
+    )
 }
 
 const VerifyBattery = ({ glassLeft, elthPLeft, glassRight, elthPRight }) => {

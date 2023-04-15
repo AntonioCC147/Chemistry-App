@@ -5,7 +5,7 @@ export default function LeftBox(props) {
 
     return (
         <>
-            <div className="info-container">
+            <div className="left-container">
                 <div className="vertical-left">{information}</div>
             </div>
         </>

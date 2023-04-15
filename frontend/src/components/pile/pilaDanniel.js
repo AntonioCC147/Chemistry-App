@@ -6,7 +6,7 @@ import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
-import PilaD from '../../assets/images/pile/PilaD.jpg';
+import PilaD from '../../assets/images/pile/PilaD.png';
 
 export default function PilaDaniell() {
     return (

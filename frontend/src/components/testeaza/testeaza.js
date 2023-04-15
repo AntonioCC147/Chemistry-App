@@ -15,11 +15,17 @@ import NavbarComponent from '../navbar/navbar';
 
 import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs } from './functions.js';
 import './testeaza.css';
+import LeftBox from '../infoBox/leftBox';
 
 import Catod from '../../assets/images/other/Catod.png';
 import Anod from '../../assets/images/other/Anod.png';
 
+import Experiment1 from '../../assets/images/other/Experiment1.png';
+import Experiment2 from '../../assets/images/other/Experiment2.png';
+
 export default function Testeaza() {
+    const isMobile = window.innerWidth < 1000;
+
     const [leftGlassName, setLeftGlassName] = useState("");
     const [rightGlassName, setRightGlassName] = useState("");
     const [verifyLeftGlass, setVerifyLeftGlass] = useState("");
@@ -48,233 +54,250 @@ export default function Testeaza() {
         setShowModal(false);
     };
 
-    return (
-        <>
-            <NavbarComponent/>
-            <Container className="container-xl footer-fix">
-                <Row>
-                    <Col sm={2}>
-                        <div className="menu-selector">
-                            <div className="mb-2 text-center pahare-dropdown">
-                                <ButtonGroup>
-                                    <DropdownButton variant="success" id="dropdown-basic-button" title="Pahare" drop="end">
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftGlassName(<Latex>$Al(NO_3)_3$</Latex>); setVerifyLeftGlass("Al")}}><Latex>$Al(NO_3)_3$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftGlassName(<Latex>$AgNO_3$</Latex>); setVerifyLeftGlass("Ag")}}><Latex>$AgNO_3$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftGlassName(<Latex>$MgNO_3$</Latex>); setVerifyLeftGlass("Mg")}}><Latex>$MgNO_3$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item 
-                                            onClick={() => {setLeftGlassName(<Latex>$Cu(NO_3)_2$</Latex>); setVerifyLeftGlass("Cu")}}><Latex>$Cu(NO_3)_2$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftGlassName(<Latex>$Sn(NO_3)_2$</Latex>); setVerifyLeftGlass("Sn")}}><Latex>$Sn(NO_3)_2$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftGlassName(<Latex>$Ni(NO_3)_2$</Latex>); setVerifyLeftGlass("Ni")}}><Latex>$Ni(NO_3)_2$</Latex>
-                                        </Dropdown.Item>
-                                    </DropdownButton>
-                                </ButtonGroup>
-                            </div>
-                            <div className="mb-2 text-center placute-dropdown">
-                                <ButtonGroup>
-                                    <DropdownButton variant="primary" id="dropdown-basic-button" title="Plăcuțe" drop="end">
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Al\;(Aluminiu)$</Latex>); setVerifyLeftElthPName("Al")}}><Latex>$Al\;(Aluminiu)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Ag\;(Argint)$</Latex>); setVerifyLeftElthPName("Ag")}}><Latex>$Ag\;(Argint)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Mg\;(Magneziu)$</Latex>); setVerifyLeftElthPName("Mg")}}><Latex>$Mg\;(Magneziu)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Cu\;(Cupru)$</Latex>); setVerifyLeftElthPName("Cu")}}><Latex>$Cu\;(Cupru)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Sn\;(Staniu)$</Latex>); setVerifyLeftElthPName("Sn")}}><Latex>$Sn\;(Staniu)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setLeftElthPName(<Latex>$Ni\;(Nichel)$</Latex>); setVerifyLeftElthPName("Ni")}}><Latex>$Ni\;(Nichel)$</Latex>
-                                        </Dropdown.Item>
-                                    </DropdownButton>
-                                </ButtonGroup>
-                            </div>
+    if(!isMobile)
+        return (
+            <>
+                <NavbarComponent/>
+                <Container className="container-xl footer-fix">
+                    <Row>
+                        <Col sm={2}>
+                            <div className="menu-selector">
+                                <div className="mb-2 text-center pahare-dropdown">
+                                    <ButtonGroup>
+                                        <DropdownButton variant="success" id="dropdown-basic-button" title="Pahare" drop="end">
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftGlassName(<Latex>$Al(NO_3)_3$</Latex>); setVerifyLeftGlass("Al")}}><Latex>$Al(NO_3)_3$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftGlassName(<Latex>$AgNO_3$</Latex>); setVerifyLeftGlass("Ag")}}><Latex>$AgNO_3$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftGlassName(<Latex>$MgNO_3$</Latex>); setVerifyLeftGlass("Mg")}}><Latex>$MgNO_3$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item 
+                                                onClick={() => {setLeftGlassName(<Latex>$Cu(NO_3)_2$</Latex>); setVerifyLeftGlass("Cu")}}><Latex>$Cu(NO_3)_2$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftGlassName(<Latex>$Sn(NO_3)_2$</Latex>); setVerifyLeftGlass("Sn")}}><Latex>$Sn(NO_3)_2$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftGlassName(<Latex>$Ni(NO_3)_2$</Latex>); setVerifyLeftGlass("Ni")}}><Latex>$Ni(NO_3)_2$</Latex>
+                                            </Dropdown.Item>
+                                        </DropdownButton>
+                                    </ButtonGroup>
+                                </div>
+                                <div className="mb-2 text-center placute-dropdown">
+                                    <ButtonGroup>
+                                        <DropdownButton variant="primary" id="dropdown-basic-button" title="Plăcuțe" drop="end">
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftElthPName(<Latex>$Al\;(Aluminiu)$</Latex>); setVerifyLeftElthPName("Al")}}><Latex>$Al\;(Aluminiu)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftElthPName(<Latex>$Ag\;(Argint)$</Latex>); setVerifyLeftElthPName("Ag")}}><Latex>$Ag\;(Argint)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftElthPName(<Latex>$Mg\;(Magneziu)$</Latex>); setVerifyLeftElthPName("Mg")}}><Latex>$Mg\;(Magneziu)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftElthPName(<Latex>$Cu\;(Cupru)$</Latex>); setVerifyLeftElthPName("Cu")}}><Latex>$Cu\;(Cupru)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftElthPName(<Latex>$Sn\;(Staniu)$</Latex>); setVerifyLeftElthPName("Sn")}}><Latex>$Sn\;(Staniu)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setLeftElthPName(<Latex>$Ni\;(Nichel)$</Latex>); setVerifyLeftElthPName("Ni")}}><Latex>$Ni\;(Nichel)$</Latex>
+                                            </Dropdown.Item>
+                                        </DropdownButton>
+                                    </ButtonGroup>
+                                </div>
 
-                            <div className="mb-2 text-center">
-                                <Button variant="secondary" onClick={() => {setSaltDeck("Exist"); setVerifytSaltDeck("Exist")}}>Punte de sare</Button>
-                            </div>
+                                <div className="mb-2 text-center">
+                                    <Button variant="secondary" onClick={() => {setSaltDeck("Exist"); setVerifytSaltDeck("Exist")}}>Punte de sare</Button>
+                                </div>
 
-                            <div className="text-center">
+                                <div className="text-center">
+                                    <img className="experiment1" src={Experiment1} alt="Experiment"/>
+                                </div>
+
+                                <div className="text-center">
+                                    <Button variant="danger" onClick={() => {
+                                            setLeftGlassName("Undefined"); setVerifyLeftGlass("Undefined");
+                                            setLeftElthPName("Undefined"); setVerifyLeftElthPName("Undefined");
+                                            setSaltDeck("None"); setVerifytSaltDeck("None");
+                                        }
+                                    }>Restează</Button>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col sm={8}>
+                            <div className="work-space-box">
+                                <SpawnSaltDeck name={saltDeck}/>
+                                <Row className="text-center">
+                                    <VerifyBattery
+                                        glassLeft={leftGlassName} elthPLeft={leftElthPName}
+                                        glassRight={rightGlassName} elthPRight={rightElthPName}
+                                    />
+                                </Row>
+
+                                <Row>
+                                    <Col sm={6}>
+                                        <Row>
+                                            <Col sm={6} >
+                                                <img className="catod" src={Catod} alt="Catod"/>
+                                            </Col>
+                                            <Col sm={6}>
+                                                <img className="anod" src={Anod} alt="Anod"/>
+                                            </Col>
+                                        </Row>
+
+                                        <div className="glass-box">
+                                            <SpawnLeftGlass name={leftGlassName} type={verifyLeftGlass}/>
+                                            <VerifyPila verify={leftElthPName} type={"left"}/>
+                                        </div>
+                                    </Col>
+                                    
+                                    <Col sm={6}>
+                                        <div className="glass-box">
+                                            <SpawnRightGlass name={rightGlassName} type={verifyRightGlass}/>
+                                            <VerifyPila verify={rightElthPName} type={"right"}/>
+                                        </div>
+                                    </Col>
+                                </Row>
+
+                                <Row>
+                                    <Col sm={3}>
+                                        <div className="pahar-box">Pahar<br/>{leftGlassName}</div>
+                                    </Col>
+                                    <Col sm={3}>
+                                        <div className="pile-box">Plăcuță<br/>{leftElthPName}</div>
+                                    </Col>
+                                    <Col sm={3}>
+                                        <div className="pahar-box">Pahar<br/>{rightGlassName}</div>
+                                    </Col>
+                                    <Col sm={3}>
+                                        <div className="pile-box">Plăcuță<br/>{rightElthPName}</div>
+                                    </Col>
+                                </Row>
+
+                                <Row>
+                                    <Col sm={6}>
+                                        <div className="text-center">
+                                            <Button variant="danger" className="reset-button"
+                                                onClick={() => {
+                                                    setLeftGlassName("Undefined"); setVerifyLeftGlass("Undefined");
+                                                    setLeftElthPName("Undefined"); setVerifyLeftElthPName("Undefined");
+                                                    setRightGlassName("Undefined"); setVerifyRightGlass("Undefined");
+                                                    setRightElthPName("Undefined"); setVerifyRightElthPName("Undefined");
+                                                    setSaltDeck("None"); setVerifytSaltDeck("None");
+                                                    }
+                                                }>
+                                                Șterge
+                                            </Button>
+                                        </div>
+                                    </Col>
+                                    
+                                    <Col sm={6}>
+                                        <div className="text-center">
+                                            <Button onClick={handleButtonClick} variant="success" className="send-button">Verifică</Button>
+                                            <CheckInputs
+                                                show={showModal}
+                                                handleClose={handleCloseModal}
+                                                verifyLeftGlass={verifyLeftGlass} verifyLeftElthPName={verifyLeftElthPName}
+                                                verifyRightGlass={verifyRightGlass} verifyRightElthPName={verifyRightElthPName}
+                                                verifySaltDeck={verifySaltDeck}
+                                            />
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Col>
+
+                        <Col sm={2}>
+                            <div className="menu-selector">
+                                <div className="mb-2 text-center pahare-dropdown">
+                                    <ButtonGroup>
+                                    <DropdownButton variant="success" id="dropdown-basic-button" title="Pahare" drop="start">
+                                    <Dropdown.Item
+                                                onClick={() => {setRightGlassName(<Latex>$Al(NO_3)_3$</Latex>); setVerifyRightGlass("Al")}}><Latex>$Al(NO_3)_3$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightGlassName(<Latex>$AgNO_3$</Latex>); setVerifyRightGlass("Ag")}}><Latex>$AgNO_3$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightGlassName(<Latex>$Mg(NO_3)_2$</Latex>); setVerifyRightGlass("Mg")}}><Latex>$Mg(NO_3)_2$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item 
+                                                onClick={() => {setRightGlassName(<Latex>$Cu(NO_3)_2$</Latex>); setVerifyRightGlass("Cu")}}><Latex>$Cu(NO_3)_2$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightGlassName(<Latex>$Sn(NO_3)_2$</Latex>); setVerifyRightGlass("Sn")}}><Latex>$Sn(NO_3)_2$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightGlassName(<Latex>$Fe(NO_3)_2$</Latex>); setVerifyRightGlass("Fe")}}><Latex>$Fe(NO_3)_2$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightGlassName(<Latex>$Ni(NO_3)_2$</Latex>); setVerifyRightGlass("Ni")}}><Latex>$Ni(NO_3)_2$</Latex>
+                                            </Dropdown.Item>
+                                        </DropdownButton>
+                                    </ButtonGroup>
+                                </div>
+                                <div className="mb-2 text-center placute-dropdown">
+                                    <ButtonGroup>
+                                        <DropdownButton variant="primary" id="dropdown-basic-button" title="Plăcuțe" drop="start">
+                                        <Dropdown.Item
+                                                onClick={() => {setRightElthPName(<Latex>$Al\;(Aluminiu)$</Latex>); setVerifyRightElthPName("Al")}}><Latex>$Al\;(Aluminiu)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightElthPName(<Latex>$Ag\;(Argint)$</Latex>); setVerifyRightElthPName("Ag")}}><Latex>$Ag\;(Argint)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightElthPName(<Latex>$Mg\;(Magneziu)$</Latex>); setVerifyRightElthPName("Mg")}}><Latex>$Mg\;(Magneziu)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightElthPName(<Latex>$Cu\;(Cupru)$</Latex>); setVerifyRightElthPName("Cu")}}><Latex>$Cu\;(Cupru)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightElthPName(<Latex>$Sn\;(Staniu)$</Latex>); setVerifyRightElthPName("Sn")}}><Latex>$Sn\;(Staniu)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightElthPName(<Latex>$Fe\;(Fier)$</Latex>); setVerifyRightElthPName("Fe")}}><Latex>$Fe\;(Fier)$</Latex>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item
+                                                onClick={() => {setRightElthPName(<Latex>$Ni\;(Nichel)$</Latex>); setVerifyRightElthPName("Ni")}}><Latex>$Ni\;(Nichel)$</Latex>
+                                            </Dropdown.Item>
+                                        </DropdownButton>
+                                    </ButtonGroup>
+                                </div>
+                                <div className="mb-2 text-center">
+                                    <Button variant="secondary" onClick={() => setSaltDeck("None")}>Sterge puntea</Button>
+                                </div>
+
+                                <div className="text-center">
+                                    <img className="experiment2" src={Experiment2} alt="Experiment"/>
+                                </div>
+
+                                <div className="text-center">
                                 <Button variant="danger" onClick={() => {
-                                        setLeftGlassName("Undefined"); setVerifyLeftGlass("Undefined");
-                                        setLeftElthPName("Undefined"); setVerifyLeftElthPName("Undefined");
+                                        setRightGlassName("Undefined"); setVerifyRightGlass("Undefined");
+                                        setRightElthPName("Undefined"); setVerifyRightElthPName("Undefined");
                                         setSaltDeck("None"); setVerifytSaltDeck("None");
                                     }
-                                }>Restează</Button>
+                                }>Resetează</Button>
+                                </div>
                             </div>
-                        </div>
-                    </Col>
-
-                    <Col sm={8}>
-                        <div className="work-space-box">
-                            <SpawnSaltDeck name={saltDeck}/>
-                            <Row className="text-center">
-                                <VerifyBattery
-                                    glassLeft={leftGlassName} elthPLeft={leftElthPName}
-                                    glassRight={rightGlassName} elthPRight={rightElthPName}
-                                />
-                            </Row>
-
-                            <Row>
-                                <Col sm={6}>
-                                    <Row>
-                                        <Col sm={6} >
-                                            <img className="catod" src={Catod} alt="Catod"/>
-                                        </Col>
-                                        <Col sm={6}>
-                                            <img className="anod" src={Anod} alt="Anod"/>
-                                        </Col>
-                                    </Row>
-
-                                    <div className="glass-box">
-                                        <SpawnLeftGlass name={leftGlassName} type={verifyLeftGlass}/>
-                                        <VerifyPila verify={leftElthPName} type={"left"}/>
-                                    </div>
-                                </Col>
-                                
-                                <Col sm={6}>
-                                    <div className="glass-box">
-                                        <SpawnRightGlass name={rightGlassName} type={verifyRightGlass}/>
-                                        <VerifyPila verify={rightElthPName} type={"right"}/>
-                                    </div>
-                                </Col>
-                            </Row>
-
-                            <Row>
-                                <Col sm={3}>
-                                    <div className="pahar-box">Pahar<br/>{leftGlassName}</div>
-                                </Col>
-                                <Col sm={3}>
-                                    <div className="pile-box">Plăcuță<br/>{leftElthPName}</div>
-                                </Col>
-                                <Col sm={3}>
-                                    <div className="pahar-box">Pahar<br/>{rightGlassName}</div>
-                                </Col>
-                                <Col sm={3}>
-                                    <div className="pile-box">Plăcuță<br/>{rightElthPName}</div>
-                                </Col>
-                            </Row>
-
-                            <Row>
-                                <Col sm={6}>
-                                    <div className="text-center">
-                                        <Button variant="danger" className="reset-button"
-                                            onClick={() => {
-                                                setLeftGlassName("Undefined"); setVerifyLeftGlass("Undefined");
-                                                setLeftElthPName("Undefined"); setVerifyLeftElthPName("Undefined");
-                                                setRightGlassName("Undefined"); setVerifyRightGlass("Undefined");
-                                                setRightElthPName("Undefined"); setVerifyRightElthPName("Undefined");
-                                                setSaltDeck("None"); setVerifytSaltDeck("None");
-                                                }
-                                            }>
-                                            Șterge
-                                        </Button>
-                                    </div>
-                                </Col>
-                                
-                                <Col sm={6}>
-                                    <div className="text-center">
-                                        <Button onClick={handleButtonClick} variant="success" className="send-button">Verifică</Button>
-                                        <CheckInputs
-                                            show={showModal}
-                                            handleClose={handleCloseModal}
-                                            verifyLeftGlass={verifyLeftGlass} verifyLeftElthPName={verifyLeftElthPName}
-                                            verifyRightGlass={verifyRightGlass} verifyRightElthPName={verifyRightElthPName}
-                                            verifySaltDeck={verifySaltDeck}
-                                        />
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Col>
-
-                    <Col sm={2}>
-                        <div className="menu-selector">
-                            <div className="mb-2 text-center pahare-dropdown">
-                                <ButtonGroup>
-                                <DropdownButton variant="success" id="dropdown-basic-button" title="Pahare" drop="start">
-                                <Dropdown.Item
-                                            onClick={() => {setRightGlassName(<Latex>$Al(NO_3)_3$</Latex>); setVerifyRightGlass("Al")}}><Latex>$Al(NO_3)_3$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightGlassName(<Latex>$AgNO_3$</Latex>); setVerifyRightGlass("Ag")}}><Latex>$AgNO_3$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightGlassName(<Latex>$Mg(NO_3)_2$</Latex>); setVerifyRightGlass("Mg")}}><Latex>$Mg(NO_3)_2$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item 
-                                            onClick={() => {setRightGlassName(<Latex>$Cu(NO_3)_2$</Latex>); setVerifyRightGlass("Cu")}}><Latex>$Cu(NO_3)_2$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightGlassName(<Latex>$Sn(NO_3)_2$</Latex>); setVerifyRightGlass("Sn")}}><Latex>$Sn(NO_3)_2$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightGlassName(<Latex>$Fe(NO_3)_2$</Latex>); setVerifyRightGlass("Fe")}}><Latex>$Fe(NO_3)_2$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightGlassName(<Latex>$Ni(NO_3)_2$</Latex>); setVerifyRightGlass("Ni")}}><Latex>$Ni(NO_3)_2$</Latex>
-                                        </Dropdown.Item>
-                                    </DropdownButton>
-                                </ButtonGroup>
-                            </div>
-                            <div className="mb-2 text-center placute-dropdown">
-                                <ButtonGroup>
-                                    <DropdownButton variant="primary" id="dropdown-basic-button" title="Plăcuțe" drop="start">
-                                    <Dropdown.Item
-                                            onClick={() => {setRightElthPName(<Latex>$Al\;(Aluminiu)$</Latex>); setVerifyRightElthPName("Al")}}><Latex>$Al\;(Aluminiu)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightElthPName(<Latex>$Ag\;(Argint)$</Latex>); setVerifyRightElthPName("Ag")}}><Latex>$Ag\;(Argint)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightElthPName(<Latex>$Mg\;(Magneziu)$</Latex>); setVerifyRightElthPName("Mg")}}><Latex>$Mg\;(Magneziu)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightElthPName(<Latex>$Cu\;(Cupru)$</Latex>); setVerifyRightElthPName("Cu")}}><Latex>$Cu\;(Cupru)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightElthPName(<Latex>$Sn\;(Staniu)$</Latex>); setVerifyRightElthPName("Sn")}}><Latex>$Sn\;(Staniu)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightElthPName(<Latex>$Fe\;(Fier)$</Latex>); setVerifyRightElthPName("Fe")}}><Latex>$Fe\;(Fier)$</Latex>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item
-                                            onClick={() => {setRightElthPName(<Latex>$Ni\;(Nichel)$</Latex>); setVerifyRightElthPName("Ni")}}><Latex>$Ni\;(Nichel)$</Latex>
-                                        </Dropdown.Item>
-                                    </DropdownButton>
-                                </ButtonGroup>
-                            </div>
-                            <div className="mb-2 text-center">
-                                <Button variant="secondary" onClick={() => setSaltDeck("None")}>Sterge puntea</Button>
-                            </div>
-
-                            <div className="text-center">
-                            <Button variant="danger" onClick={() => {
-                                    setRightGlassName("Undefined"); setVerifyRightGlass("Undefined");
-                                    setRightElthPName("Undefined"); setVerifyRightElthPName("Undefined");
-                                    setSaltDeck("None"); setVerifytSaltDeck("None");
-                                }
-                            }>Resetează</Button>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-                <br/>
-            </Container>
-        </>
-    )
+                        </Col>
+                    </Row>
+                    <br/>
+                </Container>
+            </>
+        )
+    else
+        return (
+            <LeftBox information={
+                <>
+                    Ne pare rău, însă te aflii pe un ecran prea mic pentru a putea efectua acest experiment!
+                </>
+            }/>
+        )
 }
