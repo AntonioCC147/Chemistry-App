@@ -1,0 +1,23 @@
+.modal-text {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.error-button {
+    width: 60px;
+    height: auto;
+}
+
+.error-message {
+    margin-top: 10px !important;
+}
+
+.success-button {
+    width: 70px;
+    height: auto;
+}
+
+.success-message {
+    margin-top: 15px !important;
+    padding-left: 45px !important;
+}

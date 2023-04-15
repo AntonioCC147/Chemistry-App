@@ -39,6 +39,15 @@ export default function Testeaza() {
         setSaltDeck("None"); setVerifytSaltDeck("None");
 	}, [])
 
+    const [showModal, setShowModal] = useState(false);
+    const handleButtonClick = () => {
+        CheckInputs(verifyLeftGlass);
+        setShowModal(true);
+    };
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
+
     return (
         <>
             <NavbarComponent/>
@@ -173,12 +182,14 @@ export default function Testeaza() {
                                 
                                 <Col sm={6}>
                                     <div className="send-button">
-                                    
-                                    <Button onClick={() =>
-                                        CheckInputs(verifyLeftGlass)}>
-                                    Press me
-                                    </Button>
-
+                                        <Button onClick={handleButtonClick}>Click me</Button>
+                                        <CheckInputs
+                                            show={showModal}
+                                            handleClose={handleCloseModal}
+                                            verifyLeftGlass={verifyLeftGlass} verifyLeftElthPName={verifyLeftElthPName}
+                                            verifyRightGlass={verifyRightGlass} verifyRightElthPName={verifyRightElthPName}
+                                            verifySaltDeck={verifySaltDeck}
+                                        />
                                     </div>
                                 </Col>
                             </Row>
