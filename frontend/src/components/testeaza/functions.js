@@ -95,7 +95,45 @@ const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, 
                 </Modal>
             );
     
-    else if(verifyLeftGlass === "Ag" && verifyLeftElthPName === "Ag")
+    else if(
+        //Cazul 1
+        (verifyLeftGlass === "Ag" && verifyLeftElthPName === "Ag" && ((verifyRightGlass === "Al" && verifyRightElthPName === "Al") ||
+        (verifyRightGlass === "Mg" && verifyRightElthPName === "Mg") || (verifyRightGlass === "Cu" && verifyRightElthPName === "Cu") ||
+        (verifyRightGlass === "Sn" && verifyRightElthPName === "Sn")))
+        
+        ||
+        //Cazul 2
+        (verifyLeftGlass === "Al" && verifyLeftElthPName === "Al" && verifyRightGlass === "Mg" && verifyRightElthPName === "Mg")
+
+        ||
+        //Cazul 3
+        (verifyLeftGlass === "Cu" && verifyLeftElthPName === "Cu" && ((verifyRightGlass === "Al" && verifyRightElthPName === "Al") ||
+        (verifyRightGlass === "Mg" && verifyRightElthPName === "Mg") || (verifyRightGlass === "Sn" && verifyRightElthPName === "Sn")))
+
+        ||
+        //Cazul 4
+        (verifyLeftGlass === "Sn" && verifyLeftElthPName === "Sn" && ((verifyRightGlass === "Al" && verifyRightElthPName === "Al") ||
+        (verifyRightGlass === "Mg" && verifyRightElthPName === "Mg")))
+        
+        ||
+        //Cazul 5
+        (verifyLeftGlass === "Ag" && verifyLeftElthPName === "Ag" && ((verifyRightGlass === "Fe" && verifyRightElthPName === "Fe") ||
+        (verifyRightGlass === "Ni" && verifyRightElthPName === "Ni")))
+
+        ||
+        //Cazul 6
+        (verifyLeftGlass === "Cu" && verifyLeftElthPName === "Cu" && ((verifyRightGlass === "Fe" && verifyRightElthPName === "Fe") ||
+        (verifyRightGlass === "Ni" && verifyRightElthPName === "Ni")))
+
+        ||
+        //Cazul 7
+        (verifyLeftGlass === "Sn" && verifyLeftElthPName === "Sn" && ((verifyRightGlass === "Fe" && verifyRightElthPName === "Fe") ||
+        (verifyRightGlass === "Ni" && verifyRightElthPName === "Ni")))
+
+        ||
+        //Cazul 8
+        (verifyLeftGlass === "Ni" && verifyLeftElthPName === "Ni" && verifyRightGlass === "Fe" && verifyRightElthPName === "Fe")
+    )
         return (
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -115,7 +153,7 @@ const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, 
                     <p>Valoarea lui EV COMPLETEAZA AICI</p>
                 </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="danger" onClick={handleClose}>
+                        <Button variant="success" onClick={handleClose}>
                             Închide
                         </Button>
                     </Modal.Footer>
@@ -123,25 +161,30 @@ const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, 
         );
 
     else
-    return (
-        <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-                <Modal.Title>Modal Title</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                {verifyLeftGlass === 'Al' ? (
-                <p>Popup: Value is "Al"</p>
-                ) : (
-                <p>Text: Value is "{verifyLeftGlass}"</p>
-            )}
-            </Modal.Body>
+        return (
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>
+                        <Row>
+                            <Col sm={2}>
+                                <img className="error-button" src={ErrorImg} alt="Error"/>
+                            </Col>
+                            <Col sm={10} className="error-message">
+                                Eroare! Ceva nu funcționează!
+                            </Col>
+                        </Row>
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body className="modal-text">
+                    <p>Toate elementele sunt conectate între ele, însă conexiunile sunt greșite.</p>
+                </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
+                    <Button variant="danger" onClick={handleClose}>
+                        Închide
                     </Button>
                 </Modal.Footer>
-        </Modal>
-    );
+            </Modal>
+        );
 }
 
 export { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs };

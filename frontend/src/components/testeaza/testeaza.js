@@ -64,6 +64,9 @@ export default function Testeaza() {
                                         <Dropdown.Item
                                             onClick={() => {setLeftGlassName(<Latex>$AgNO_3$</Latex>); setVerifyLeftGlass("Ag")}}><Latex>$AgNO_3$</Latex>
                                         </Dropdown.Item>
+                                        <Dropdown.Item
+                                            onClick={() => {setLeftGlassName(<Latex>$MgNO_3$</Latex>); setVerifyLeftGlass("Mg")}}><Latex>$MgNO_3$</Latex>
+                                        </Dropdown.Item>
                                         <Dropdown.Item 
                                             onClick={() => {setLeftGlassName(<Latex>$Cu(NO_3)_2$</Latex>); setVerifyLeftGlass("Cu")}}><Latex>$Cu(NO_3)_2$</Latex>
                                         </Dropdown.Item>
@@ -93,6 +96,9 @@ export default function Testeaza() {
                                         </Dropdown.Item>
                                         <Dropdown.Item
                                             onClick={() => {setLeftElthPName(<Latex>$Sn\;(Staniu)$</Latex>); setVerifyLeftElthPName("Sn")}}><Latex>$Sn\;(Staniu)$</Latex>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item
+                                            onClick={() => {setLeftElthPName(<Latex>$Ni\;(Nichel)$</Latex>); setVerifyLeftElthPName("Ni")}}><Latex>$Ni\;(Nichel)$</Latex>
                                         </Dropdown.Item>
                                     </DropdownButton>
                                 </ButtonGroup>
@@ -242,6 +248,12 @@ export default function Testeaza() {
                                         </Dropdown.Item>
                                         <Dropdown.Item
                                             onClick={() => {setRightElthPName(<Latex>$Sn\;(Staniu)$</Latex>); setVerifyRightElthPName("Sn")}}><Latex>$Sn\;(Staniu)$</Latex>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item
+                                            onClick={() => {setRightElthPName(<Latex>$Fe\;(Fier)$</Latex>); setVerifyRightElthPName("Fe")}}><Latex>$Fe\;(Fier)$</Latex>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item
+                                            onClick={() => {setRightElthPName(<Latex>$Ni\;(Nichel)$</Latex>); setVerifyRightElthPName("Ni")}}><Latex>$Ni\;(Nichel)$</Latex>
                                         </Dropdown.Item>
                                     </DropdownButton>
                                 </ButtonGroup>
