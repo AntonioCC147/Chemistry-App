@@ -164,6 +164,8 @@
 }
 
 .reset-button {
+    width: 250px;
+    
     text-align: center;
 
     margin: 20px 25% 0px 25%;
@@ -177,6 +179,8 @@
 }
 
 .send-button {
+    width: 250px;
+
     text-align: center;
 
     margin: 20px 25% 0px 25%;
@@ -186,7 +190,7 @@
     font-size: 18px;
 
     border-radius: 30px;
-    background-color: #5D9C59;
+    background-color: #198754;
 }
 
 .verify-modal {

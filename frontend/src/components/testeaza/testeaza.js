@@ -171,8 +171,8 @@ export default function Testeaza() {
 
                             <Row>
                                 <Col sm={6}>
-                                    <div className="reset-button">
-                                        <Button
+                                    <div className="text-center">
+                                        <Button variant="danger" className="reset-button"
                                             onClick={() => {
                                                 setLeftGlassName("Undefined"); setVerifyLeftGlass("Undefined");
                                                 setLeftElthPName("Undefined"); setVerifyLeftElthPName("Undefined");
@@ -187,8 +187,8 @@ export default function Testeaza() {
                                 </Col>
                                 
                                 <Col sm={6}>
-                                    <div className="send-button">
-                                        <Button onClick={handleButtonClick}>Click me</Button>
+                                    <div className="text-center">
+                                        <Button onClick={handleButtonClick} variant="success" className="send-button">Verifică</Button>
                                         <CheckInputs
                                             show={showModal}
                                             handleClose={handleCloseModal}
