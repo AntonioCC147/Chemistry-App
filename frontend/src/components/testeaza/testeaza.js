@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import Latex from 'react-latex';
 
 import Container from 'react-bootstrap/Container';
@@ -12,16 +11,17 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
 import NavbarComponent from '../navbar/navbar';
+import LeftBox from '../infoBox/leftBox';
 
 import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs } from './functions.js';
-import './testeaza.css';
-import LeftBox from '../infoBox/leftBox';
 
 import Catod from '../../assets/images/other/Catod.png';
 import Anod from '../../assets/images/other/Anod.png';
 
 import Experiment1 from '../../assets/images/other/Experiment1.png';
 import Experiment2 from '../../assets/images/other/Experiment2.png';
+
+import './testeaza.css';
 
 export default function Testeaza() {
     const isMobile = window.innerWidth < 1000;

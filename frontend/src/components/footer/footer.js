@@ -4,7 +4,6 @@ import Col from 'react-bootstrap/Col';
 import UPBIcon from '../../assets/images/icons/UPBIcon.png';
 import ACSIcon from '../../assets/images/icons/ACSIcon.png';
 
-import '../home/home.css';
 import './footer.css';
 
 export default function Footer() {

@@ -8,7 +8,6 @@ import PaharVerde from '../../assets/images/pahare/PaharVerde.png';
 import PaharAlbastru from '../../assets/images/pahare/PaharAlbastru.png';
 
 import SaltyDeck from '../../assets/images/other/SaltyDeck.png';
-
 import Battery from '../../assets/images/other/Battery.png';
 import Pile from '../../assets/images/pile/PilaTesteaza.png';
 

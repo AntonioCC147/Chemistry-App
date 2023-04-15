@@ -11,8 +11,6 @@ import LeftBox from '../infoBox/leftBox';
 import Battery1 from '../../assets/images/other/Battery1.png';
 import Battery2 from '../../assets/images/other/Battery2.png';
 
-import './acumulatori.css';
-
 export default function Acumulatori() {
     const s = `$_{(s)} \\;$`; const twos = `$_{2(s)} \\;$`; const fours = `$_{4(s)} \\;$`;
     const fourtwominus = `$_4^{2-} \\;$`;
@@ -34,8 +32,8 @@ export default function Acumulatori() {
                                 PageMaker including versions of Lorem Ipsum.
                             </>
                         }/>
-                        <img className="battery1-fix" src={Battery1} alt="Baterie"/>
-                        <img className="battery2-fix" src={Battery2} alt="Baterie"/>
+                        <img style={{margin: "auto", width: "450px"}} src={Battery1} alt="Baterie"/>
+                        <img style={{margin: "auto", marginTop: "50%", width: "450px"}} src={Battery2} alt="Baterie"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={
