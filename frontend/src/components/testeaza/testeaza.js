@@ -94,7 +94,12 @@ export default function Testeaza() {
                             </div>
 
                             <div className="text-center">
-                                <Button variant="danger" onClick={() => { setLeftGlassName("Undefined"); setLeftElthPName("Undefined"); setSaltDeck("None") }}>Restează</Button>
+                                <Button variant="danger" onClick={() => {
+                                        setLeftGlassName("Undefined"); setVerifyLeftGlass("Undefined");
+                                        setLeftElthPName("Undefined"); setVerifyLeftElthPName("Undefined");
+                                        setSaltDeck("None"); setVerifytSaltDeck("None");
+                                    }
+                                }>Restează</Button>
                             </div>
                         </div>
                     </Col>
@@ -154,9 +159,11 @@ export default function Testeaza() {
                                     <div className="reset-button">
                                         <Button
                                             onClick={() => {
-                                                setLeftGlassName("Undefined"); setLeftElthPName("Undefined");
-                                                setRightGlassName("Undefined"); setRightElthPName("Undefined");
-                                                setSaltDeck("None");
+                                                setLeftGlassName("Undefined"); setVerifyLeftGlass("Undefined");
+                                                setLeftElthPName("Undefined"); setVerifyLeftElthPName("Undefined");
+                                                setRightGlassName("Undefined"); setVerifyRightGlass("Undefined");
+                                                setRightElthPName("Undefined"); setVerifyRightElthPName("Undefined");
+                                                setSaltDeck("None"); setVerifytSaltDeck("None");
                                                 }
                                             }>
                                             Șterge
@@ -167,9 +174,10 @@ export default function Testeaza() {
                                 <Col sm={6}>
                                     <div className="send-button">
                                     
-                                        <Button>
-                                            <CheckInputs verify={verifyLeftGlass}/>
-                                        </Button>
+                                    <Button onClick={() =>
+                                        CheckInputs(verifyLeftGlass)}>
+                                    Press me
+                                    </Button>
 
                                     </div>
                                 </Col>
@@ -232,7 +240,12 @@ export default function Testeaza() {
                             </div>
 
                             <div className="text-center">
-                            <Button variant="danger" onClick={() => { setRightGlassName("Undefined"); setRightElthPName("Undefined"); }}>Resetează</Button>
+                            <Button variant="danger" onClick={() => {
+                                    setRightGlassName("Undefined"); setVerifyRightGlass("Undefined");
+                                    setRightElthPName("Undefined"); setVerifyRightElthPName("Undefined");
+                                    setSaltDeck("None"); setVerifytSaltDeck("None");
+                                }
+                            }>Resetează</Button>
                             </div>
                         </div>
                     </Col>

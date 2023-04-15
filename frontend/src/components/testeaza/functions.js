@@ -59,13 +59,14 @@ const SpawnSaltDeck = ({ name }) => {
         );
 }
 
-const CheckInputs = ({ verify }) => {
-    if(verify !== "Undefined")
-            return (
-                <>
-                    All is good
-                </>
-            )
-}
+const CheckInputs = (verifyLeftGlass) => {
+    if (verifyLeftGlass === 'Al') {
+      // Display popup if value is "Al"
+      alert('Popup: Value is "Al"');
+    } else {
+      // Display text if value is something else
+      alert(`Text: Value is "${verifyLeftGlass}"`);
+    }
+  };
 
 export { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs };
