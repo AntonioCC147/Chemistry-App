@@ -67,7 +67,7 @@
 
 .img-fix-home {
     width: 500px;
-    height: 223px;
+    height: auto;
 
     margin: 25px 0px 5px 0px;
     border-radius: 20px;

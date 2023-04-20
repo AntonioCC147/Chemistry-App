@@ -79,7 +79,9 @@ const SpawnSaltDeck = ({ name }) => {
         );
 }
 
-const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, verifyRightGlass, verifyRightElthPName, verifySaltDeck }) => {
+const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, verifyRightGlass, verifyRightElthPName, verifySaltDeck }) => {    
+    let potential_Standard = 0;
+    
     if(verifyLeftGlass === "Undefined" || verifyLeftElthPName === "Undefined" ||
         verifyRightGlass === "Undefined" || verifyRightElthPName === "Undefined" || verifySaltDeck === "None")
             return (
@@ -145,7 +147,17 @@ const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, 
         ||
         //Cazul 8
         (verifyLeftGlass === "Ni" && verifyLeftElthPName === "Ni" && verifyRightGlass === "Fe" && verifyRightElthPName === "Fe")
-    )
+    ){
+        if(verifyLeftGlass === "Ag" && verifyRightGlass === "Al") potential_Standard = 2.45; else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Mg") potential_Standard = 3.16;
+        else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Cu") potential_Standard = 0.45; else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Sn") potential_Standard = 0.93;
+        else if(verifyLeftGlass === "Al" && verifyRightGlass === "Mg") potential_Standard = 0.71; else if(verifyLeftGlass === "Cu" && verifyRightGlass === "Al") potential_Standard = 2;
+        else if(verifyLeftGlass === "Cu" && verifyRightGlass === "Mg") potential_Standard = 2.71; else if(verifyLeftGlass === "Cu" && verifyRightGlass === "Sn") potential_Standard = 0.48;
+        else if(verifyLeftGlass === "Sn" && verifyRightGlass === "Al") potential_Standard = 1.52; else if(verifyLeftGlass === "Sn" && verifyRightGlass === "Mg") potential_Standard = 2.23;
+        else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Fe") potential_Standard = 1.23; else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Ni") potential_Standard = 1.04;
+        else if(verifyLeftGlass === "Cu" && verifyRightGlass === "Fe") potential_Standard = 0.78; else if(verifyLeftGlass === "Cu" && verifyRightGlass === "Ni") potential_Standard = 0.59;
+        else if(verifyLeftGlass === "Sn" && verifyRightGlass === "Fe") potential_Standard = 0.3; else if(verifyLeftGlass === "Sn" && verifyRightGlass === "Ni") potential_Standard = 0.11;
+        else if(verifyLeftGlass === "Ni" && verifyRightGlass === "Fe") potential_Standard = 0.19;
+
         return (
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -162,7 +174,7 @@ const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, 
                 </Modal.Header>
                 <Modal.Body className="modal-text">
                     <p>Toate elementele au fost conectate corect.</p>
-                    <p>Valoarea lui EV COMPLETEAZA AICI</p>
+                    <p><b>Tensiunea electromotoare standard (V): {potential_Standard}</b></p>
                 </Modal.Body>
                     <Modal.Footer>
                         <Button variant="success" onClick={handleClose}>
@@ -172,7 +184,7 @@ const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, 
             </Modal>
         );
 
-    else
+    }else
         return (
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>

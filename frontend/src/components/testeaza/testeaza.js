@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import Latex from 'react-latex';
+import { useState, useEffect } from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,6 +11,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
 import NavbarComponent from '../navbar/navbar';
+import InfoBox from '../infoBox/infoBox';
 import LeftBox from '../infoBox/leftBox';
 
 import { SpawnLeftGlass, SpawnRightGlass, VerifyBattery, VerifyPila, SpawnSaltDeck, CheckInputs } from './functions.js';
@@ -53,6 +54,15 @@ export default function Testeaza() {
     const handleCloseModal = () => {
         setShowModal(false);
     };
+
+    const potential = `$\\; \\varepsilon^{0}(V) \\;$`;
+    const Al = `$\\; \\Large{\\varepsilon_{Al^{3+}/Al}^{0}}\\;$`;
+    const Ag = `$\\; \\Large{\\varepsilon_{Ag^+/Ag}^{0}} \\;$`;
+    const Mg = `$\\; \\Large{\\varepsilon_{Mg^{2+}/Mg}^{0}} \\;$`;
+    const Cu = `$\\; \\Large{\\varepsilon_{Cu^{2+}/Cu}^{0}} \\;$`;
+    const Sn = `$\\; \\Large{\\varepsilon_{Sn^{2+}/Sn}^{0}} \\;$`;
+    const Fe = `$\\; \\Large{\\varepsilon_{Fe^{2+}/Fe}^{0}} \\;$`;
+    const Ni = `$\\; \\Large{\\varepsilon_{Ni^{2+}/Ni}^{0}} \\;$`;
 
     if(!isMobile)
         return (
@@ -270,7 +280,7 @@ export default function Testeaza() {
                                     </ButtonGroup>
                                 </div>
                                 <div className="mb-2 text-center">
-                                    <Button variant="secondary" onClick={() => setSaltDeck("None")}>Sterge puntea</Button>
+                                    <Button variant="secondary" onClick={() => {setSaltDeck("None"); setVerifytSaltDeck("None")}}>Sterge puntea</Button>
                                 </div>
 
                                 <div className="text-center">
@@ -289,6 +299,38 @@ export default function Testeaza() {
                         </Col>
                     </Row>
                     <br/>
+                    <Row>
+                        <Col sm={4}>
+                            <LeftBox information={
+                                <>
+                                    <p className="cuprins-title">Potențiale standard (V) / <Latex>{potential}</Latex></p>
+                                    <p className="potentiale">
+                                        <Latex>{Al}</Latex><Latex>$=-1.66$</Latex><br/>
+                                        <Latex>{Ag}</Latex><Latex>$0.79$</Latex><br/>
+                                        <Latex>{Mg}</Latex><Latex>$=-2.37$</Latex><br/>
+                                        <Latex>{Cu}</Latex><Latex>$=-0.34$</Latex><br/>
+                                        <Latex>{Sn}</Latex><Latex>$=-0.14$</Latex><br/>
+                                        <Latex>{Fe}</Latex><Latex>$=-0.44$</Latex><br/>
+                                        <Latex>{Ni}</Latex><Latex>$=-0.25$</Latex>
+                                    </p>
+                                </>
+                            }/>
+                        </Col>
+                        <Col sm={8}>
+                            <InfoBox information={
+                                <>
+                                    <p className="cuprins-title">Lore Ipsum</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </>
+                            }/>
+                        </Col>
+                    </Row>
                 </Container>
             </>
         )

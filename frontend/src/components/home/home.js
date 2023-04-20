@@ -2,9 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import ElectricCar from '../../assets/images/other/ElectricCar.png';
 import PileE1 from '../../assets/images/pile/PileElectrice.svg';
-import PileE2 from '../../assets/images/pile/PileE2.jpg';
-import PileE3 from '../../assets/images/pile/PileE3.jpg';
 
 import NavbarComponent from '../navbar/navbar';
 import InfoBox from '../infoBox/infoBox';
@@ -58,11 +57,9 @@ export default function Home() {
                         </Col>
                         <Col sm={5}>
                             <Row>
-                                <div className="text-center"><img className="img-fix-home img-mobile" src={PileE2} alt="Pile Electrice 2"/></div>
+                                <div className="text-center"><img className="img-fix-home img-mobile" src={ElectricCar} alt="Pile Electrice 2"/></div>
                             </Row>
-                            <Row>
-                                <div className="text-center"><img className="img-fix-home img-mobile" src={PileE3} alt="Pile Electrice 3"/></div>
-                            </Row>
+                            
                         </Col>
 			    </Row>
             </Container>
