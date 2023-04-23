@@ -53,18 +53,18 @@ export default function elemGalv() {
                                 <p><b>Electrodul:</b> la nivelul lui are loc oxidarea (în cazul anodului) sau reducerea (în cazul catodului).
                                     Combinările dintre metalele care sunt folosite drept electrozi sunt date de <u>seria de reactivitate</u>.
                                 </p>
-                                <p><b>Anodul </b>- electronul de <Latex>$Zn$</Latex>:</p>
+                                <p><b>Anodul </b>- electrodul de <Latex>$Zn$</Latex>:</p>
                                 <div className="text-center">
                                     <Latex>$Zn^\circ$</Latex><Latex>{s}</Latex><Latex>{arrowminus}</Latex><Latex>Zn</Latex><Latex>{twoplus}</Latex><Latex>{aq}</Latex>
                                 </div>
                                 <ul>
-                                    <li>masa electronului de Zn scade;</li>
-                                    <li>concentrația ionilor de Zn<sup>2+</sup> în soluție creste;</li>
-                                    <li>ionii Cl<sup>-</sup> (din puncte de sare) se orientează spre această semicelulă spre a compensa nivelul
+                                    <li>masa electrodului de Zn scade;</li>
+                                    <li>concentrația ionilor de Zn<sup>2+</sup> în soluție crește;</li>
+                                    <li>ionii Cl<sup>-</sup> (din puntea de sare) se orientează spre această semicelulă spre a compensa nivelul
                                         ridicat al sarcinilor pozitive;
                                     </li>
                                 </ul>
-                                <p><b>Catodul </b>- electronul de <Latex>$Cu$</Latex>:</p>
+                                <p><b>Catodul </b>- electrodul de <Latex>$Cu$</Latex>:</p>
                                 <div className="text-center">
                                     <Latex>$Cu$</Latex><Latex>{twoplus}</Latex><Latex>{aq}</Latex><Latex>{arrowplus}</Latex><Latex>$Cu^\circ$</Latex><Latex>{s}</Latex>
                                 </div>

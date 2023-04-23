@@ -12,7 +12,7 @@ import ClasApp from './components/clasifApp/clasifApp';
 import ElemGalv from './components/elemGalv/elemGalv';
 import Reactivitate from './components/reactivitate/reactivitate';
 import Acumulatori from './components/acumulatori/acumulatori';
-import PilaDaniell from './components/pile/pilaDanniel';
+import PilaDaniellJacobi from './components/pile/pilaDannielJacobi';
 import PilaLenclanche from './components/pile/pilaLenclanche';
 import PilaAlcalina from './components/pile/pilaAlcalina';
 import PilaCombustie from './components/pile/pilaCombustie';
@@ -41,7 +41,7 @@ export default function App() {
           <Route path="/elementulgalvanic" element={<ElemGalv/>}></Route>
           <Route path="/acumulatori" element={<Acumulatori/>}></Route>
           <Route path="/reactivitate" element={<Reactivitate/>}></Route>
-          <Route path="/piladaniell" element={<PilaDaniell/>}></Route>
+          <Route path="/piladanielljacobi" element={<PilaDaniellJacobi/>}></Route>
           <Route path="/pilalenclanche" element={<PilaLenclanche/>}></Route>
           <Route path="/pilaalcalina" element={<PilaAlcalina/>}></Route>
           <Route path="/pilacombustie" element={<PilaCombustie/>}></Route>

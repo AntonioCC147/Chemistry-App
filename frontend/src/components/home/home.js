@@ -39,18 +39,12 @@ export default function Home() {
                     <Col sm={7}>
                         <InfoBox information={
                             <>
-                                <p>Randamentul superior va face din ele mijlocul de producere al energiei electrice privilegiat al secolului.</p>
-                                <p>Realizatorii de telefoane mobile sau de microcalculatoare portabile, visează de ani de zile:
-                                    pila de combustie ar fi principalul mijloc de a crește autonomia produselor în mod considerabil. Și industria
-                                    automobilelor sec interesează de această sursă de energie "curată".
+                                <p><span className="bold-text">Pilele electrice</span> (celule galvanice sau celule voltaice) sunt celule electrochimice în care reacţii spontane
+                                    de oxido-reducere produc energie electrică. Cele două reacţii redox sunt separate, necesitând ca transferul
+                                    de electroni să se producă printr-un circuit extern. În acest fel se obţine energia electrică. 
                                 </p>
-                                <p>Hidrogenul este energia viitorului? Un lucru este sigur: nu există petrol la nesfârșit. Domeniul nuclear este
-                                    "dedicat", iar unora le-ar plăcea să renunțe la el.
-                                </p>
-                                <p>Principalul interes: pilele de combustie nu poluează aproape deloc, pentru că nu ard carburant, ci își recombină
-                                    atomii. Singurele lor subproduse sunt apa și dioxidul de carbon, acest ultim element fiind din nefericire
-                                    dăunător pentru echilibrul termic al planetei (accentuează efectul de seră). Aceste generatoare electrice sunt
-                                    lipsite de elemente mecanice. Sunt deci foarte fliabile și silențioase.
+                                <p>Exemple uzuale de celule voltaice sunt bateriile folosite în lanterne, aparate de radio portabile,
+                                    echipamente fotografice precum şi numeroase jucării.
                                 </p>
                             </>
                         }/>

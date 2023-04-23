@@ -306,7 +306,7 @@ export default function Testeaza() {
                                     <p className="cuprins-title">Potențiale standard (V) / <Latex>{potential}</Latex></p>
                                     <p className="potentiale">
                                         <Latex>{Al}</Latex><Latex>$=-1.66$</Latex><br/>
-                                        <Latex>{Ag}</Latex><Latex>$0.79$</Latex><br/>
+                                        <Latex>{Ag}</Latex><Latex>$=0.79$</Latex><br/>
                                         <Latex>{Mg}</Latex><Latex>$=-2.37$</Latex><br/>
                                         <Latex>{Cu}</Latex><Latex>$=-0.34$</Latex><br/>
                                         <Latex>{Sn}</Latex><Latex>$=-0.14$</Latex><br/>

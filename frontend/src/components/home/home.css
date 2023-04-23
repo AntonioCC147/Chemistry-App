@@ -66,12 +66,10 @@
 }
 
 .img-fix-home {
-    width: 500px;
+    width: 450px;
     height: auto;
 
-    margin: 25px 0px 5px 0px;
     border-radius: 20px;
-  
     filter: drop-shadow(0 1px 16px #bdbdbd);
 }
 
@@ -84,6 +82,19 @@
 
 .footer-fix {
     min-height: calc(100vh - 203px);
+}
+
+.bold-text {
+    font-weight: bold;
+    color: #210062;
+}
+
+.left-text{
+    margin-left: 10%;
+}
+
+.right-text {
+    margin-left: 80%;
 }
 
 @media only screen and (max-width: 1200px) {

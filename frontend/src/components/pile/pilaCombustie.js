@@ -36,10 +36,7 @@ export default function PilaCombustie() {
                                 <p>In pilele de combustie procesul de oxido-reducere are loc prin arderea combustibililor (hidrogen, metanol,
                                     oxid de car­bon, unele hidrocarburi).
                                 </p>
-                                <p>La anod, denumit si electrod de combustibil, are loc oxidarea combustibilibor, proces prin care se
-                                    elibereaza electroni in circuitul exterior.
-                                </p>
-                                <p>La anod, denumit si electrod de combustibil, are loc oxidarea combustibilibor, proces prin care se
+                                <p>La anod, denumit și electrod de combustibil, are loc oxidarea combustibillor, proces prin care se
                                     elibereaza electroni in circuitul exterior.
                                 </p>Dificultatea construirii pilelor de acest tip consta in faptul ca oxidarea combustibililor necesita
                                     temperaturi ridicate, conditii in care containerul si electrozii se corodeaza. Necesitatea furnizarii

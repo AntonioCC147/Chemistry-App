@@ -26,7 +26,7 @@ export default function NavbarComponent() {
             <Nav.Link href="/reactivitate">Reactivitate</Nav.Link>
             <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
             <NavDropdown title="Pile" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/piladaniell">Pila Daniell</NavDropdown.Item>
+              <NavDropdown.Item href="/piladanielljacobi">Pila Daniell-Jacobi</NavDropdown.Item>
               <NavDropdown.Item href="/pilalenclanche">Pila Lenclanche</NavDropdown.Item>
               <NavDropdown.Item href="/pilaalcalina">Pila Alcalină</NavDropdown.Item>
               <NavDropdown.Item href="/pilacombustie">Pila de Combustie</NavDropdown.Item>
