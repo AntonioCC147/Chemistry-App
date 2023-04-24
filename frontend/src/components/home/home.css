@@ -97,6 +97,15 @@
     margin-left: 80%;
 }
 
+.gif {
+    margin: auto;
+
+    width: auto;
+    height: 130px;
+
+    text-align: center;
+}
+
 @media only screen and (max-width: 1200px) {
     .img-fix {
         width: 500px;

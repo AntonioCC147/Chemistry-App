@@ -23,17 +23,25 @@ export default function Acumulatori() {
                     <Col sm={4}>
                         <LeftBox information={
                             <>
-                                <p className="cuprins-title">Lore Ipsum:</p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                                PageMaker including versions of Lorem Ipsum.
+                                <p className="cuprins-title">Pastila de știință...</p>
+                                <p>Acumulatorii sunt celule electrochimice care pot acumula energie electrică sub formă de energie chimică.
+                                    De aceea ei trebuiesc întâi "încărcaţi" pentru a putea livra mai târziu energie electrică sub formă de
+                                    curent continuu. Un acumulator descărcat se poate reîncărca; această succesiune încărcare - descărcare se
+                                    numeşte ciclu.
+                                </p>
+                                <p>Acumulatorul Nichel-Cadmiu:
+                                    <ul>
+                                        <li>Inventat în 1899 de suedezul Waldemar Jugner</li>
+                                        <li>Prezintă efect de memorie</li>
+                                        <li>Utilizează materiale cu grad de toxicitate mare</li>
+                                        <li>S-a produs în cantități de peste 1,5 miliarde de bucăți pe an</li>
+                                        <li>A fost foarte populară până la sfârșitul anilor 1990, iar producția lor este restricționată în prezent în toate piețele mari</li>
+                                    </ul>
+                                </p>
                             </>
                         }/>
                         <img style={{margin: "auto", width: "450px"}} src={Battery1} alt="Baterie"/>
-                        <img style={{margin: "auto", marginTop: "50%", width: "450px"}} src={Battery2} alt="Baterie"/>
+                        <img style={{margin: "auto", marginTop: "20%", width: "450px"}} src={Battery2} alt="Baterie"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={

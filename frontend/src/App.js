@@ -7,7 +7,7 @@ import Logo from './assets/images/icons/Logo.png';
 
 import './App.css';
 import Acasa from "./components/home/home";
-import How from './components/how/how';
+import Functionalitati from './components/functionalitati/functionalitati';
 import ClasApp from './components/clasifApp/clasifApp';
 import ElemGalv from './components/elemGalv/elemGalv';
 import Reactivitate from './components/reactivitate/reactivitate';
@@ -36,7 +36,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Acasa/>}></Route>
-          <Route path="/how" element={<How/>}></Route>
+          <Route path="/functionalitati" element={<Functionalitati/>}></Route>
           <Route path="/clasapp" element={<ClasApp/>}></Route>
           <Route path="/elementulgalvanic" element={<ElemGalv/>}></Route>
           <Route path="/acumulatori" element={<Acumulatori/>}></Route>

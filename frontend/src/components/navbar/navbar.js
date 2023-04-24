@@ -15,7 +15,7 @@ export default function NavbarComponent() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
                 <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
-            <Nav.Link href="/how">Funcționalități</Nav.Link>
+            <Nav.Link href="/functionalitati">Funcționalități</Nav.Link>
                 <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
             <Nav.Link href="/clasapp">Clasificare & Aplicații</Nav.Link>
                 <span className="navbar-divider" style={{margin: 'auto'}}>|</span>

@@ -8,7 +8,10 @@ import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
-export default function How() {
+import GIF from '../../assets/images/other/GIF.gif';
+import '../home/home.css';
+
+export default function Functionalitati() {
     const eq2 = `$E=\\varepsilon^++\\varepsilon^-$`;
 
     return (
@@ -19,15 +22,16 @@ export default function How() {
                     <Col sm={4}>
                     <LeftBox information={
                         <>
-                            <p className="cuprins-title">Lore Ipsum:</p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                            PageMaker including versions of Lorem Ipsum.
+                            <p className="cuprins-title">Află ceva nou!</p>
+                            <p>Ca urmare a diversității echipamentelor alimentate, pilele trebuie să răspundă unor diverse cerințe în ceea ce
+                                privește capacitatea, tensiunea și curentul de scurtcircuit. Acest lucru se reflectă în dimensiunile și forma
+                                acestora, precum și în construcția și tipul materialului folosit pentru fabricarea electrozilor și
+                                electrolitului. Și astfel survine întrebarea prin ce se deosebesc diferitele „baterii” și cum să le folosim
+                                corect?
+                            </p>
                         </>
                     }/>
+                    <img style={{marginTop: "20px", width: "450px", height: "150px", borderRadius: "20px"}} src={GIF} alt="GIF"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={
