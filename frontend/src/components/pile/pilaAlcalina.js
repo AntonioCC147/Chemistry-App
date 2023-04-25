@@ -7,6 +7,7 @@ import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
 import PilaA from '../../assets/images/pile/PilaA.svg';
+import NicVas from '../../assets/images/other/NicVas.jpg';
 
 export default function PilaAlcalina() {
     return (
@@ -17,15 +18,13 @@ export default function PilaAlcalina() {
                     <Col sm={4}>
                     <LeftBox information={
                         <>
-                            <p className="cuprins-title">Lore Ipsum:</p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                            PageMaker including versions of Lorem Ipsum.
+                            <p className="cuprins-title">Chiar la noi acasă!</p>
+                            <p>Nicolae Vasilescu-Karpen, primul rector al Universității Politehnica din București a studiat și realizat pila Karpen.</p>
                         </>
                     }/>
+                    <div className="text-center">
+                        <img style={{alignItems: "center", width: "250px", borderRadius: "20px"}} src={NicVas} alt="Nicolae Vasilescu"/>
+                    </div>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={

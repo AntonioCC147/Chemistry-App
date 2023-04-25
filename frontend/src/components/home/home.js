@@ -21,13 +21,22 @@ export default function Home() {
                     <Col sm={4}>
                     <LeftBox information={
                         <>
-                            <p className="cuprins-title">Lore Ipsum:</p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                            PageMaker including versions of Lorem Ipsum.
+                            <p className="cuprins-title">Experiment:</p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Două pahare - Acestea vor fi folosite pentru a conține substanțele necesare pentru generarea energiei electrice.
+                                    </li>
+                                    <li>
+                                        Substanțe - Este nevoie de două substanțe diferite, care să fie capabile să reacționeze chimic și să
+                                        producă energie electrică.
+                                    </li>
+                                    <li>
+                                        Punte de sare - Pentru a conecta cele două pahare și pentru a permite fluxul de ioni între ele, este necesară o punte de sare.
+                                        Aceasta este de obicei un șervețel de hârtie îmbibat într-o soluție saturată de sare, care este plasat între cele două pahare.
+                                    </li>
+                                </ul>
+                            </p>
                         </>
                     }/>
                     </Col>

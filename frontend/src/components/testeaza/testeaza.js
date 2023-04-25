@@ -319,13 +319,17 @@ export default function Testeaza() {
                         <Col sm={8}>
                             <InfoBox information={
                                 <>
-                                    <p className="cuprins-title">Lore Ipsum</p>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    <p className="cuprins-title">Ce reprezintă totuși potențialele standard?</p>
+                                    <p>În electrochimie, potențialul standard de electrod (sau potențialul standard de reducere) reprezintă o
+                                        măsură a potențialului unui electrod reversibil în stare standard, adică solutul cu o concentrație
+                                        efectivă de 1 mol/dm<sup>3</sup> și gazele la o presiune de 1 atmosferă. Valorile pentru potențialele standard de
+                                        electrod se găsesc de obicei în tabele, pentru o temperatură de 25 °C și au fost determinate având ca
+                                        referință electrodul standard de hidrogen.
+                                    </p>
+                                    <p>Baza pentru o celulă electrochimică, precum este o celulă galvanică, este mereu o reacție redox, care
+                                        poate fi împărțită în două așa-zise semi-reacții: oxidarea ce are loc la anod (cu cedare de electron)
+                                        și reducerea ce are loc la catod. Electricitatea este generată ca urmare a
+                                        diferenței de potențial electric dintre cei doi electrozi.
                                     </p>
                                 </>
                             }/>

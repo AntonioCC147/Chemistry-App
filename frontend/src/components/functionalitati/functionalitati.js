@@ -31,7 +31,7 @@ export default function Functionalitati() {
                             </p>
                         </>
                     }/>
-                    <img style={{marginTop: "20px", width: "450px", height: "150px", borderRadius: "20px"}} src={GIF} alt="GIF"/>
+                    <img style={{marginTop: "20px", marginLeft: "5px", width: "450px", height: "150px", borderRadius: "20px"}} src={GIF} alt="GIF"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={
