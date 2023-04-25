@@ -28,8 +28,8 @@ export default function App() {
             <a href="/"><img className="logo" src={Logo} alt="Logo"/></a>
           </Col>
           <Col sm={10}>
-            <p className="principal-title">Pile Electrice</p>
-            <p className="secundar-title">- Laborator -</p>
+            <p className="principal-title"><span className="bold-text">Pile Electrice</span></p>
+            <p className="secundar-title"><span className="bold-text">- Laborator -</span></p>
           </Col>
         </Row>
       </div>

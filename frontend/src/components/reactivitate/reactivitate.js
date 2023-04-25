@@ -16,7 +16,7 @@ export default function Reactivitate() {
                     <Col>
                         <InfoBox information={
                             <>
-                                <p className="cuprins-title">Seria de reactivitate:</p>
+                                <p className="cuprins-title"><span className="bold-text">Seria de reactivitate:</span></p>
                                 <div className="text-center">
                                     <img style={{width: '800px', height: 'auto'}} src={React} alt="Reactivitate"/>
                                 </div>

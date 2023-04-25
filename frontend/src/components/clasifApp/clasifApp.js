@@ -17,7 +17,7 @@ export default function clasifApp() {
                     <Col sm={4}>
                         <InfoBox information={
                                 <div className="design-container">
-                                    <p className="cuprins-title">Clasificare:</p>
+                                    <p className="cuprins-title"><span className="bold-text">Clasificare:</span></p>
                                     <ul>
                                         <li>Pile primare</li>
                                             <ul>
@@ -39,7 +39,7 @@ export default function clasifApp() {
                     <Col sm={4}>
                         <InfoBox information={
                                 <div className="design-container"> 
-                                    <p className="cuprins-title">Aplicații:</p>
+                                    <p className="cuprins-title"><span className="bold-text">Aplicații:</span></p>
                                     <ul>
                                         <li>Comunicații</li>
                                         <li>Autoturisme</li>

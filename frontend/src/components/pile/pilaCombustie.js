@@ -18,7 +18,7 @@ export default function PilaCombustie() {
                     <Col>
                         <InfoBox information={
                             <>
-                                <p className="cuprins-title">Pila de Combustie:</p>
+                                <p className="cuprins-title"><span className="bold-text">Pila de Combustie:</span></p>
                                 <p>In pilele de combustie procesul de oxido-reducere are loc prin arderea combustibililor (hidrogen, metanol,
                                     oxid de car­bon, unele hidrocarburi).
                                 </p>

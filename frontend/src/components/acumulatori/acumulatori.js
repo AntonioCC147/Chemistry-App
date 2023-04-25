@@ -23,13 +23,13 @@ export default function Acumulatori() {
                     <Col sm={4}>
                         <LeftBox information={
                             <>
-                                <p className="cuprins-title">Pastila de știință...</p>
+                                <p className="cuprins-title"><span className="bold-text">Pastila de știință...</span></p>
                                 <p>Acumulatorii sunt celule electrochimice care pot acumula energie electrică sub formă de energie chimică.
                                     De aceea ei trebuiesc întâi "încărcaţi" pentru a putea livra mai târziu energie electrică sub formă de
                                     curent continuu. Un acumulator descărcat se poate reîncărca; această succesiune încărcare - descărcare se
                                     numeşte ciclu.
                                 </p>
-                                <p>Acumulatorul Nichel-Cadmiu:
+                                <p><span className="bold-text">Acumulatorul Nichel-Cadmiu:</span>
                                     <ul>
                                         <li>Inventat în 1899 de suedezul Waldemar Jugner</li>
                                         <li>Prezintă efect de memorie</li>
@@ -46,7 +46,7 @@ export default function Acumulatori() {
                     <Col sm={8}>
                         <InfoBox information={
                             <>
-                                <p className="cuprins-title">Acumulatori acizi:</p>
+                                <p className="cuprins-title"><span className="bold-text">Acumulatori acizi:</span></p>
                                 <p>Acumulatorul cu plumb este o pila cu electrolit lichid realizat pentru prima oara, in anul 1859, de
                                     inginerul francez Gaston Planté.
                                 </p>
@@ -81,8 +81,8 @@ export default function Acumulatori() {
                                     reacțiile inverse celor indicate.
                                 </p>T.e.m. a unei celule este de aproximativ 2V. Frecvent se utilizează acumulatori construiți din șase sau
                                     douăsprezece celule legate în serie pentru a produce 12V sau 24V.
-                                <p className="cuprins-title some-space">Acumulatori alcani:</p>
-                                <p><b>Pila Edison:</b></p>
+                                <p className="cuprins-title some-space"><span className="bold-text">Acumulatori alcani:</span></p>
+                                <p><span className="bold-text">Pila Edison:</span></p>
                                 <p>Un alt acumulator mult folosit este bateria alcalina sau acumulatorul nichel - fier, dezvoltată de inventatorul
                                     american Thomas Edison în 1-900. Este alcătuită dintr-un electrod negativ din fier, cel pozitiv din oxid de
                                     nichel si electrolitul este o soluție de hidroxid de potasiu. Are dezavantajul de a emana hidrogen în timpul
@@ -91,7 +91,7 @@ export default function Acumulatori() {
                                 <p>Aceast acumulator este folosit în principal în aplicații în industria grea. Bateria Edison funcționeaza bine
                                     timp de 10 ani și produce circa 1.15V.
                                 </p>
-                                <p><b>Acumulatorul Nichel-Cadmiu:</b></p>
+                                <p><span className="bold-text">Acumulatorul Nichel-Cadmiu:</span></p>
                                 <p>O baterie alcalină similara bateriei Edison este celula nichel-cadmiu sau bateria de cadmiu, în care
                                     electrodul de fier este înlocuit cu unul din cadmiu. Functioneaza timp de 25 de ani si produce circa
                                     1.15 V.

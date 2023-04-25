@@ -22,13 +22,14 @@ export default function Functionalitati() {
                     <Col sm={4}>
                     <LeftBox information={
                         <>
-                            <p className="cuprins-title">Află ceva nou!</p>
+                            <p className="cuprins-title"><span className="bold-text">Află ceva nou!</span></p>
                             <p>Ca urmare a diversității echipamentelor alimentate, pilele trebuie să răspundă unor diverse cerințe în ceea ce
-                                privește capacitatea, tensiunea și curentul de scurtcircuit. Acest lucru se reflectă în dimensiunile și forma
-                                acestora, precum și în construcția și tipul materialului folosit pentru fabricarea electrozilor și
-                                electrolitului. Și astfel survine întrebarea prin ce se deosebesc diferitele „baterii” și cum să le folosim
-                                corect?
+                                privește capacitatea, tensiunea și curentul de scurtcircuit.
                             </p>
+                            <p>Acest lucru se reflectă în dimensiunile și forma acestora, precum și în construcția și tipul materialului
+                                folosit pentru fabricarea electrozilor și electrolitului.
+                            </p>
+                            <p>Și astfel survine întrebarea prin ce se deosebesc diferitele „baterii” și cum să le folosim corect?</p>
                         </>
                     }/>
                     <img style={{marginTop: "20px", marginLeft: "5px", width: "450px", height: "150px", borderRadius: "20px"}} src={GIF} alt="GIF"/>
@@ -36,8 +37,8 @@ export default function Functionalitati() {
                     <Col sm={8}>
                         <InfoBox information={
                             <>
-                                <p className="cuprins-title">Caracteristicile funcționale ale pilelor electrice:</p>
-                                <p>1. Tensiunea electromotoare (t.e.m) a unui baterii <Latex>$E_b$</Latex> se obţine prin însumarea tensiunilor
+                                <p className="cuprins-title"><span className="bold-text">Caracteristicile funcționale ale pilelor electrice:</span></p>
+                                <p><span className="bold-text">1. Tensiunea electromotoare</span> (t.e.m) a unui baterii <Latex>$E_b$</Latex> se obţine prin însumarea tensiunilor
                                     electromotoare ale celulelor galvanice individuale legate în serie:</p>
                                 <p>
                                     <Row>
@@ -61,7 +62,7 @@ export default function Functionalitati() {
                                     </Row>
                                 </p>
                                 <p>unde <Latex>$Ep$</Latex> - reprezintă tensiunea de polarizare.</p>
-                                <p>2. Rezistenţa internă totală <Latex>$r_i$</Latex> reprezintă rezistenţa electrică opusă de pilă la trecerea
+                                <p><span className="bold-text">2. Rezistenţa internă totală</span> <Latex>$r_i$</Latex> reprezintă rezistenţa electrică opusă de pilă la trecerea
                                     curentului:</p>
                                 <p>
                                     <Row>
@@ -80,7 +81,7 @@ export default function Functionalitati() {
                                     </Row>
                                 </p>
                                 <p>unde <Latex>$E_p$</Latex> tensiunea de polarizare, <Latex>$I_d$</Latex> curentul de descărcare.</p>
-                                <p>3. Capacitatea pilelor electrice reprezintă cantitatea de materie activă ce se poate transforma prin reacţii
+                                <p><span className="bold-text">3. Capacitatea pilelor electrice</span> reprezintă cantitatea de materie activă ce se poate transforma prin reacţii
                                     chimice redox de la electrozi în energie chimică, fiind exprimată în <Latex>$A$</Latex>∙<Latex>$h$</Latex>.</p>
                                 <p>Capacitatea teoretică maximă <Latex>$QT$</Latex> este dată de cantitatea totală de sarcină eliberată în circuitul exterior de
                                     numărul total de moli oxidanţi la trecerea unui curent Id într-un interval de timp.</p>
@@ -88,7 +89,7 @@ export default function Functionalitati() {
                                     Numărul de cicluri de încărcare-descărcare depinde de gradul de descărcare: dacă acumulatorul a fost
                                     descărcat în proporţie de 25% numărul de cicluri este de ordinul miilor dar dacă s-au produs descărcări în
                                     proporţie de 75%, numărul de cicluri se reduce la câteva sute.</p>
-                                <p>4. Gradul de utilizare:</p>
+                                <p><span className="bold-text">4. Gradul de utilizare:</span></p>
                                 <p>
                                     <Row>
                                         <Col sm={6}><span className="left-text"><Latex>$\eta=(m:M)$</Latex>∙<Latex>$Q_d$</Latex></span></Col>
@@ -97,16 +98,16 @@ export default function Functionalitati() {
                                 </p>
                                 <p>unde: <Latex>$m$</Latex> este masa de substanţa activă iniţială; <Latex>$M$</Latex> este masa de substanţa activă
                                     consumată; <Latex>$Q_d$</Latex> – capacitatea de descărcare.</p>
-                                <p>5. Puterea pilelor electrice </p>
+                                <p><span className="bold-text">5. Puterea pilelor electric:</span></p>
                                 <p>
                                     <Row>
                                         <Col sm={6}><span className="left-text"><Latex>$P= E_b$</Latex>∙<Latex>$I_d$</Latex></span></Col>
                                     </Row>
                                 </p>
-                                <p>6. Autodescărcare (A) acumulatorului – reprezintă pierderea iniţială a capacităţii pilei când circuitul
+                                <p><span className="bold-text">6. Autodescărcare (A) acumulatorului</span> – reprezintă pierderea iniţială a capacităţii pilei când circuitul
                                     este deschis. Acest proces este provocat de reacţiile chimice nedorite între electrozi şi soluţiile de
                                     electrolit. Autodescărcarea se evaluează cantitativ în procesele pierderii capacităţii în 24 ore.</p>
-                                <p>7. Entalpia liberă a unei pile se calculează cu relaţia:</p>
+                                <p><span className="bold-text">7. Entalpia liberă a unei pile se calculează cu relaţia:</span></p>
                                 <p>
                                     <Row>
                                         <Col sm={6}><span className="left-text"><Latex>$\Delta G^0 = -zFE^0$</Latex></span></Col>

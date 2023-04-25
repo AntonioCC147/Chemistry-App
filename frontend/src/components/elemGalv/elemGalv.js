@@ -25,7 +25,7 @@ export default function elemGalv() {
                     <Col sm={4}>
                         <LeftBox information={
                             <>
-                                <p className="cuprins-title">Știai că...?</p>
+                                <p className="cuprins-title"><span className="bold-text">Știai că...?</span></p>
                                 <p>Celulele de combustie nu necesită reîncărcare, în ele se introduc substanţele chimice de fiecare dată când
                                     se foloseşte electricitatea. Acestea sunt mult prea costisitoare pentru aplicaţiile uzuale şi sunt folosite
                                     doar în unele staţii spaţiale.
@@ -39,19 +39,19 @@ export default function elemGalv() {
                     <Col sm={8}>
                         <InfoBox information={
                             <>
-                                <p className="cuprins-title">Elementul Galvanic:</p>
+                                <p className="cuprins-title"><span className="bold-text">Elementul Galvanic:</span></p>
                                 <p>Pilele electrochimice (sau pilele galvanice) sunt sisteme în care energia chimică este transformată în energie electrică.</p>
-                                <p><b>Componenta:</b></p>
+                                <p><span className="bold-text">Componenta:</span></p>
                                 <ul>
                                     <li>2 electrozi (două semicelule);</li>
                                     <li>punte de sare;</li>
                                     <li>volmetru;</li>
                                     <li>conductor metalic exterior;</li>
                                 </ul>
-                                <p><b>Electrodul:</b> la nivelul lui are loc oxidarea (în cazul anodului) sau reducerea (în cazul catodului).
+                                <p><span className="bold-text">Electrodul:</span> la nivelul lui are loc oxidarea (în cazul anodului) sau reducerea (în cazul catodului).
                                     Combinările dintre metalele care sunt folosite drept electrozi sunt date de <u>seria de reactivitate</u>.
                                 </p>
-                                <p><b>Anodul </b>- electrodul de <Latex>$Zn$</Latex>:</p>
+                                <p><span className="bold-text">Anodul </span>- electrodul de <Latex>$Zn$</Latex>:</p>
                                 <div className="text-center">
                                     <Latex>$Zn^\circ$</Latex><Latex>{s}</Latex><Latex>{arrowminus}</Latex><Latex>Zn</Latex><Latex>{twoplus}</Latex><Latex>{aq}</Latex>
                                 </div>
@@ -62,7 +62,7 @@ export default function elemGalv() {
                                         ridicat al sarcinilor pozitive;
                                     </li>
                                 </ul>
-                                <p><b>Catodul </b>- electrodul de <Latex>$Cu$</Latex>:</p>
+                                <p><span className="bold-text">Catodul </span>- electrodul de <Latex>$Cu$</Latex>:</p>
                                 <div className="text-center">
                                     <Latex>$Cu$</Latex><Latex>{twoplus}</Latex><Latex>{aq}</Latex><Latex>{arrowplus}</Latex><Latex>$Cu^\circ$</Latex><Latex>{s}</Latex>
                                 </div>
@@ -73,15 +73,15 @@ export default function elemGalv() {
                                         ridicat al sarcinilor negative;
                                     </li>
                                 </ul>
-                                <p><b>Reacția globală generatoare de curent:</b></p>
+                                <p><span className="bold-text">Reacția globală generatoare de curent:</span></p>
                                 <div className="text-center">
                                     <Latex>$Zn^\circ + Cu$</Latex><Latex>{twoplus}</Latex><Latex>{arrowsimple}</Latex><Latex>$Zn$</Latex><Latex>{twoplus}</Latex><Latex>$+ Cu^\circ$</Latex>
                                 </div>
-                                <p><b>Puntea de sare: </b>are rolul de a asigura neutralitatea soluțiilor sărurilor celor două metale care joacă
+                                <p><span className="bold-text">Puntea de sare: </span>are rolul de a asigura neutralitatea soluțiilor sărurilor celor două metale care joacă
                                     rol de electrozi.
                                 </p>
-                                <p><b>Volmetru: </b>demonstrează diferența de potențial dintre cele două semicelule.</p>
-                                <p><b>Conductorul metalic exterior:</b> asigură transportul electronilor între cele două semicelule.</p>
+                                <p><span className="bold-text">Volmetru: </span>demonstrează diferența de potențial dintre cele două semicelule.</p>
+                                <p><span className="bold-text">Conductorul metalic exterior:</span> asigură transportul electronilor între cele două semicelule.</p>
                             </>
                         }/>
                     </Col>  

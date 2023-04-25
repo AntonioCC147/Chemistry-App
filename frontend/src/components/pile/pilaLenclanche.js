@@ -20,7 +20,7 @@ export default function PilaLenclanche() {
                     <Col>
                         <InfoBox information={
                             <>
-                                <p className="cuprins-title">Pila Lenclanche:</p>
+                                <p className="cuprins-title"><span className="bold-text">Pila Lenclanche:</span></p>
                                 <p>Cea mai comuna forma de pila galvanica este pila Leclanche inventata de chimistul francez Georges Leclanch
                                     în 1860. In limbaj popular este numita pila uscata sau baterie proiectoare. Pila Leclanche utilizata in
                                     zilele noastre este foarte similara inventiei originale. Electrolitul consta dintr-un amestec de clorura

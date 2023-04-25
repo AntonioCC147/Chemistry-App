@@ -22,7 +22,7 @@ export default function PilaDaniellJacobi() {
                     <Col sm={4}>
                     <LeftBox information={
                         <>
-                            <p className="cuprins-title">Află că...</p>
+                            <p className="cuprins-title"><span className="bold-text">Află că...</span></p>
                             <p>Arheologii tind să spună că bateriile există de mult mai mult timp.
                                 <br/> În 1938 s-a descoperit în Iraq un borcan de ceramică care conținea un cilindru de cupru care încapsula o
                                 bară de fier.
@@ -34,7 +34,7 @@ export default function PilaDaniellJacobi() {
                     <Col sm={8}>
                         <InfoBox information={
                             <>
-                                <p className="cuprins-title">Pila Daniell-Jacobi:</p>
+                                <p className="cuprins-title"><span className="bold-text">Pila Daniell-Jacobi:</span></p>
                                 <p>Considerăm o celulă standard formată din două compartimente:</p>
                                 <p>
                                     <ul>

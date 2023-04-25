@@ -10,26 +10,26 @@ export default function NavbarComponent() {
   return (
     <Navbar className="navbar-container" collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="/" className="navbar-brand">Acasă</Navbar.Brand>
+        <Navbar.Brand href="/" className="navbar-brand"><span className="bold-text">Acasă</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
                 <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
-            <Nav.Link href="/functionalitati">Funcționalități</Nav.Link>
+            <Nav.Link href="/functionalitati"><span className="nav-text">Funcționalități</span></Nav.Link>
                 <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
-            <Nav.Link href="/clasapp">Clasificare & Aplicații</Nav.Link>
+            <Nav.Link href="/clasapp"><span className="nav-text">Clasificare & Aplicații</span></Nav.Link>
                 <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
-            <Nav.Link href="/elementulgalvanic">Elementul Galvanic</Nav.Link>
+            <Nav.Link href="/elementulgalvanic"><span className="nav-text">Elementul Galvanic</span></Nav.Link>
                 <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
-            <Nav.Link href="/acumulatori">Acumulatori</Nav.Link>
+            <Nav.Link href="/acumulatori"><span className="nav-text">Acumulatori</span></Nav.Link>
                 <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
-            <Nav.Link href="/reactivitate">Reactivitate</Nav.Link>
+            <Nav.Link href="/reactivitate"><span className="nav-text">Reactivitate</span></Nav.Link>
             <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
-            <NavDropdown title="Pile" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/piladanielljacobi">Pila Daniell-Jacobi</NavDropdown.Item>
-              <NavDropdown.Item href="/pilalenclanche">Pila Lenclanche</NavDropdown.Item>
-              <NavDropdown.Item href="/pilaalcalina">Pila Alcalină</NavDropdown.Item>
-              <NavDropdown.Item href="/pilacombustie">Pila de Combustie</NavDropdown.Item>
+            <NavDropdown className="nav-text" title="Pile">
+              <NavDropdown.Item href="/piladanielljacobi"><span className="nav-text">Pila Daniell-Jacobi</span></NavDropdown.Item>
+              <NavDropdown.Item href="/pilalenclanche"><span className="nav-text">Pila Lenclanche</span></NavDropdown.Item>
+              <NavDropdown.Item href="/pilaalcalina"><span className="nav-text">Pila Alcalină</span></NavDropdown.Item>
+              <NavDropdown.Item href="/pilacombustie"><span className="nav-text">Pila de Combustie</span></NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <div className="test-button">

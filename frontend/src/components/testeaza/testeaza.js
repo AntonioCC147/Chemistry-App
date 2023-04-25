@@ -303,7 +303,7 @@ export default function Testeaza() {
                         <Col sm={4}>
                             <LeftBox information={
                                 <>
-                                    <p className="cuprins-title">Potențiale standard (V) / <Latex>{potential}</Latex></p>
+                                    <p className="cuprins-title"><span className="bold-text">Potențiale standard (V) /<Latex>{potential}</Latex></span></p>
                                     <p className="potentiale">
                                         <Latex>{Al}</Latex><Latex>$=-1.66$</Latex><br/>
                                         <Latex>{Ag}</Latex><Latex>$=0.79$</Latex><br/>
@@ -319,7 +319,7 @@ export default function Testeaza() {
                         <Col sm={8}>
                             <InfoBox information={
                                 <>
-                                    <p className="cuprins-title">Ce reprezintă totuși potențialele standard?</p>
+                                    <p className="cuprins-title"><span className="bold-text">Ce reprezintă totuși potențialele standard?</span></p>
                                     <p>În electrochimie, potențialul standard de electrod (sau potențialul standard de reducere) reprezintă o
                                         măsură a potențialului unui electrod reversibil în stare standard, adică solutul cu o concentrație
                                         efectivă de 1 mol/dm<sup>3</sup> și gazele la o presiune de 1 atmosferă. Valorile pentru potențialele standard de

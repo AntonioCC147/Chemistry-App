@@ -18,7 +18,7 @@ export default function PilaAlcalina() {
                     <Col sm={4}>
                     <LeftBox information={
                         <>
-                            <p className="cuprins-title">Chiar la noi acasă!</p>
+                            <p className="cuprins-title"><span className="bold-text">Chiar la noi acasă!</span></p>
                             <p>Nicolae Vasilescu-Karpen, primul rector al Universității Politehnica din București a studiat și realizat pila Karpen.</p>
                         </>
                     }/>
@@ -29,14 +29,14 @@ export default function PilaAlcalina() {
                     <Col sm={8}>
                         <InfoBox information={
                             <>
-                                <p className="cuprins-title">Pila Alcalină:</p>
+                                <p className="cuprins-title"><span className="bold-text">Pila Alcalină:</span></p>
                                 <p>Pilele alcaline sunt de dimensiuni foarte mici. Sunt utilizate la ceasuri, aparate auditive, camere video,
                                     minicalculatoare.
                                 </p>
                                 <div className="text-center">
                                     <img className="img-fix" src={PilaA} alt="Pila Alcalina"/>
                                 </div>
-                                <p className="cuprins-title">Bateria cu Mercur:</p>
+                                <p className="cuprins-title"><span className="bold-text">Bateria cu Mercur:</span></p>
                                 <p>O alta pila galvanica folosita pe scara larga este bateria cu mercur. Poate lua forma unui disc mic si plat
                                     si este folosita în aceasta forma în aparate pentru auz, celule fotoelectrice si ceasuri de mana electrice.
                                     Electrodul negativ este din zinc, cel pozitiv din oxid de mercur, iar electrolitul este o solutie de
