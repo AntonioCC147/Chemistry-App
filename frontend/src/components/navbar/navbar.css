@@ -21,3 +21,13 @@
 
     background-color: #fcfafb;
 }
+
+.nav-text {
+    font-weight: 500;
+    color: #210062
+}
+
+.nav-pile-text > a.nav-link {
+    font-weight: 500;
+    color: #210062
+}

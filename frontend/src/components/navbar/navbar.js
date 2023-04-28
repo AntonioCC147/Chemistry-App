@@ -25,7 +25,7 @@ export default function NavbarComponent() {
                 <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
             <Nav.Link href="/reactivitate"><span className="nav-text">Reactivitate</span></Nav.Link>
             <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
-            <NavDropdown className="nav-text" title="Pile">
+            <NavDropdown className="nav-pile-text" title="Pile">
               <NavDropdown.Item href="/piladanielljacobi"><span className="nav-text">Pila Daniell-Jacobi</span></NavDropdown.Item>
               <NavDropdown.Item href="/pilalenclanche"><span className="nav-text">Pila Lenclanche</span></NavDropdown.Item>
               <NavDropdown.Item href="/pilaalcalina"><span className="nav-text">Pila Alcalină</span></NavDropdown.Item>
