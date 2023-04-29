@@ -135,7 +135,7 @@ export default function Testeaza() {
                                             setLeftElthPName("Undefined"); setVerifyLeftElthPName("Undefined");
                                             setSaltDeck("None"); setVerifytSaltDeck("None");
                                         }
-                                    }>Restează</Button>
+                                    }>Resetează</Button>
                                 </div>
                             </div>
                         </Col>
