@@ -29,7 +29,7 @@ export default function App() {
             <a href="/"><img className="logo" src={Logo} alt="Logo"/></a>
           </Col>
           <Col sm={10}>
-            <p className="principal-title"><span className="bold-text">Pile Electrice</span></p>
+            <p className="principal-title"><span className="bold-text">Pile Electrice - Aplicație pentru laborator</span></p>
           </Col>
         </Row>
       </div>
