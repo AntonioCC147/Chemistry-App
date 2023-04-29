@@ -41,10 +41,10 @@ export default function PilaCombustie() {
                                 </div>
                                 <p>La electrozi se desfasoara reactiile:</p>
                                 <div className="text-center some-space">
-                                    <Latex>$(-)\;H_2 + 2HO^- \longrightarrow 2H_2O + 2e^-$</Latex>
+                                    <Latex>$(-)\;H_2 + 2HO^- \longrightarrow$</Latex><Latex>$\;2H_2O + 2e^-$</Latex>
                                 </div>
                                 <div className="text-center some-space">
-                                    <Latex>$(+)\;$</Latex><Latex>{frac}</Latex><Latex>$O_2 + H_2O + 2e^- \longrightarrow 2HO^-$</Latex>
+                                    <Latex>$(+)\;$</Latex><Latex>{frac}</Latex><Latex>$O_2 + H_2O$</Latex><Latex>$ + 2e^-\longrightarrow 2HO^-$</Latex>
                                 </div>
                                 <p>Reactia totala este: <Latex>$\;H_2 +$</Latex><Latex>{frac}</Latex><Latex>$O_2 = H_2O$</Latex></p>
                                 <p>Pentru functionarea eficienta a pilei hidrogen-oxigen trebuie indepartate apa formata si caldura. In pila

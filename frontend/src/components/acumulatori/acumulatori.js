@@ -10,6 +10,7 @@ import LeftBox from '../infoBox/leftBox';
 
 import Battery1 from '../../assets/images/other/Battery1.png';
 import Battery2 from '../../assets/images/other/Battery2.png';
+import '../home/home.css';
 
 export default function Acumulatori() {
     const s = `$_{(s)} \\;$`; const twos = `$_{2(s)} \\;$`; const fours = `$_{4(s)} \\;$`;
@@ -40,8 +41,8 @@ export default function Acumulatori() {
                                 </p>
                             </>
                         }/>
-                        <img style={{margin: "auto", width: "450px"}} src={Battery1} alt="Baterie"/>
-                        <img style={{margin: "auto", marginTop: "20%", width: "450px"}} src={Battery2} alt="Baterie"/>
+                        <img style={{margin: "auto", width: "450px"}} className="img-clasapp" src={Battery1} alt="Baterie"/>
+                        <img style={{margin: "auto", marginTop: "20%", width: "450px"}} className="img-clasapp" src={Battery2} alt="Baterie"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={

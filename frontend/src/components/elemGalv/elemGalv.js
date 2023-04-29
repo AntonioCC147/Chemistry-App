@@ -9,6 +9,7 @@ import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
 import ElemGalvBattery from '../../assets/images/other/ElemGalvBattery.png';
+import '../home/home.css';
 
 export default function elemGalv() {
     const arrowminus = `$\\; \\xrightarrow[]{-2e^-} \\;$`;
@@ -33,7 +34,7 @@ export default function elemGalv() {
                             </>
                         }/>
                         <div className="text-center">
-                            <img style={{margin: "20px", width: "400px"}} src={ElemGalvBattery} alt="Baterie"/>
+                            <img style={{margin: "20px", width: "400px"}} className="img-galv" src={ElemGalvBattery} alt="Baterie"/>
                         </div>
                     </Col>
                     <Col sm={8}>

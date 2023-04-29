@@ -37,13 +37,13 @@ export default function PilaLenclanche() {
                                     <Latex>$+ 2e^-$</Latex>
                                 </div>
                                 <div className="text-center some-space">
-                                    <Latex>$(+)\;2NH$</Latex><Latex>{fourplus}</Latex><Latex>$\;+\;2MnO_2 + 2e^- \longrightarrow Mn_2O_3 + H_2O$</Latex>
+                                    <Latex>$(+)\;2NH$</Latex><Latex>{fourplus}</Latex><Latex>$\;+\;2MnO_2 + 2e^-$</Latex><Latex>$\longrightarrow Mn_2O_3 + H_2O$</Latex>
                                 </div>
                                 <p>Forta electromotoare a acestei pile este de 1,5 - 1 ,65 V, si scade pe masura ce pila se descarca. In mod
                                     frecvent, se leaga in serie mai multe astfel de baterii.
                                 </p>
                                 <div className="text-center">
-                                    <img className="img-fix" src={PilaL} alt="Pila Lenclanche"/>
+                                    <img src={PilaL} alt="Pila Lenclanche"/>
                                 </div>
                                 <p>O alta întrebuintare este in bateriile de acumulatoare. Astfel de baterii sunt dezvoltate pentru uz
                                     electric pentru a fi folosite ca nivelatoare de încarcatura, pentru a compensa fluctuatiile momentane de

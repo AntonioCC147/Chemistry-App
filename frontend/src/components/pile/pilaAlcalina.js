@@ -34,7 +34,7 @@ export default function PilaAlcalina() {
                                     minicalculatoare.
                                 </p>
                                 <div className="text-center">
-                                    <img className="img-fix" src={PilaA} alt="Pila Alcalina"/>
+                                    <img  src={PilaA} alt="Pila Alcalina"/>
                                 </div>
                                 <p className="cuprins-title"><span className="bold-text">Bateria cu Mercur:</span></p>
                                 <p>O alta pila galvanica folosita pe scara larga este bateria cu mercur. Poate lua forma unui disc mic si plat

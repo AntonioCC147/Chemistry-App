@@ -9,6 +9,7 @@ import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
 import PilaD from '../../assets/images/pile/PilaD.png';
+import '../home/home.css';
 
 export default function PilaDaniellJacobi() {
     const Zn2plus = `$Zn^{2+}$`;
@@ -44,7 +45,7 @@ export default function PilaDaniellJacobi() {
                                 </p>
                                 <p>Această celulă galvanică este numită pila Daniell-Jacobi.</p>
                                 <div className="text-center">
-                                    <img className="img-fix" src={PilaD} alt="Pila Daniell"/>
+                                    <img className="pila-dan-len" src={PilaD} alt="Pila Daniell"/>
                                 </div>
                                 <p>Următoarele observaţii experimentale au fost făcute cu privire la această celulă:</p>
                                 <p>

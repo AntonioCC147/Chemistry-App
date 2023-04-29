@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Logo from './assets/images/icons/Logo.png';
 
 import './App.css';
+import './components/home/home.css';
 import Acasa from "./components/home/home";
 import Functionalitati from './components/functionalitati/functionalitati';
 import ClasApp from './components/clasifApp/clasifApp';
@@ -29,7 +30,6 @@ export default function App() {
           </Col>
           <Col sm={10}>
             <p className="principal-title"><span className="bold-text">Pile Electrice</span></p>
-            <p className="secundar-title"><span className="bold-text">- Laborator -</span></p>
           </Col>
         </Row>
       </div>

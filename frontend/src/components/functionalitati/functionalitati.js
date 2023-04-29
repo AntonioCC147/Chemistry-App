@@ -32,7 +32,7 @@ export default function Functionalitati() {
                             <p>Și astfel survine întrebarea prin ce se deosebesc diferitele „baterii” și cum să le folosim corect?</p>
                         </>
                     }/>
-                    <img style={{marginTop: "20px", marginLeft: "5px", width: "450px", height: "150px", borderRadius: "20px"}} src={GIF} alt="GIF"/>
+                    <img style={{marginTop: "20px", marginLeft: "5px", width: "450px", height: "150px", borderRadius: "20px"}} className="img-functionalitati" src={GIF} alt="GIF"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={
