@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
@@ -16,7 +15,6 @@ export default function Functionalitati() {
 
     return (
         <>
-            <NavbarComponent/>
             <Container className="container-xl footer-fix">
                 <Row>
                     <Col sm={4}>
@@ -32,7 +30,7 @@ export default function Functionalitati() {
                             <p>Și astfel survine întrebarea prin ce se deosebesc diferitele „baterii” și cum să le folosim corect?</p>
                         </>
                     }/>
-                    <img style={{marginTop: "20px", marginLeft: "5px", width: "450px", height: "150px", borderRadius: "20px"}} className="img-functionalitati" src={GIF} alt="GIF"/>
+                    <img style={{marginTop: "20px", marginLeft: "5px", width: "100%", height: "150px", borderRadius: "20px"}} className="img-functionalitati" src={GIF} alt="GIF"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={

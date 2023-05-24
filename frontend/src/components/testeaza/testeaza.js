@@ -10,7 +10,6 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
-import NavbarComponent from '../navbar/navbar';
 import InfoBox from '../infoBox/infoBox';
 import LeftBox from '../infoBox/leftBox';
 
@@ -67,7 +66,6 @@ export default function Testeaza() {
     if(!isMobile)
         return (
             <>
-                <NavbarComponent/>
                 <Container className="container-xl footer-fix">
                     <Row>
                         <Col sm={2}>

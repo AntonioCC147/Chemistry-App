@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import ElectricCar from '../../assets/images/other/ElectricCar.png';
 import PileE1 from '../../assets/images/pile/PileElectrice.svg';
 
-import NavbarComponent from '../navbar/navbar';
 import InfoBox from '../infoBox/infoBox';
 import LeftBox from '../infoBox/leftBox';
 
@@ -14,8 +13,7 @@ import '../infoBox/infoBox.css';
 
 export default function Home() {
     return (
-        <>
-            <NavbarComponent/>
+        <>  
             <Container className="container-xl footer-fix">
                 <Row>
                     <Col sm={4}>
@@ -41,7 +39,7 @@ export default function Home() {
                     }/>
                     </Col>
                     <Col sm={8} className="text-center">
-                        <img className="img-fix img-mobile" src={PileE1} alt="Pile Electrice 1"/>
+                        <img style={{height:"100%", width:"75%"}} src={PileE1} alt="Pile Electrice 1"/>
                     </Col>
                 </Row>
 			    <Row>

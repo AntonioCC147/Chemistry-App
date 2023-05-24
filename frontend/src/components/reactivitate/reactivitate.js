@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 
 import React from '../../assets/images/other/Reactivitate.gif';
@@ -11,7 +10,6 @@ import '../home/home.css';
 export default function Reactivitate() {
     return (
         <>
-            <NavbarComponent/>
             <Container className="container-xl footer-fix">
                 <Row>
                     <Col>
@@ -19,7 +17,7 @@ export default function Reactivitate() {
                             <>
                                 <p className="cuprins-title"><span className="bold-text">Seria de reactivitate:</span></p>
                                 <div className="text-center">
-                                    <img style={{width: '800px', height: 'auto'}} className="img-reactivitate" src={React} alt="Reactivitate"/>
+                                    <img style={{width: '100%', height: 'auto'}} src={React} alt="Reactivitate"/>
                                 </div>
                                 <p>Metalele care în seria de activitate se găsesc înaintea hidrogenului joacă rol de anod, iar cele de după
                                     hidrogen joacă rol de catod.

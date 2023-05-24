@@ -1,5 +1,5 @@
 .design-container {
-    height: 320px !important;
+    min-height: 200px;
 }
 
 .img-fix-app {

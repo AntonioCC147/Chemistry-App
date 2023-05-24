@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
@@ -18,7 +17,6 @@ export default function Acumulatori() {
 
     return (
         <>
-            <NavbarComponent/>
             <Container className="container-xl footer-fix">
                 <Row>
                     <Col sm={4}>
@@ -41,8 +39,8 @@ export default function Acumulatori() {
                                 </p>
                             </>
                         }/>
-                        <img style={{margin: "auto", width: "450px"}} className="img-clasapp" src={Battery1} alt="Baterie"/>
-                        <img style={{margin: "auto", marginTop: "20%", width: "450px"}} className="img-clasapp" src={Battery2} alt="Baterie"/>
+                        <img style={{margin: "auto", width: "100%"}} className="img-clasapp" src={Battery1} alt="Baterie"/>
+                        <img style={{margin: "auto", width: "100%", marginTop: "20%"}} className="img-clasapp" src={Battery2} alt="Baterie"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={

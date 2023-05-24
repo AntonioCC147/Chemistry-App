@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="text-center p-4 footer">
             <Row>
                 <Col sm={1}>
-                    <a href="https://upb.ro/" target="blank"><img className="icon-left-img" src={UPBIcon} alt="UPB Icon"/></a>
+                    <a href="https://acs.pub.ro/" target="blank"><img className="icon-left-img" src={ACSIcon} alt="ACS Icon"/></a>
                 </Col>
                 <Col sm={10}>
                     <div className="text-align">
@@ -31,7 +31,7 @@ export default function Footer() {
                     </div>
                 </Col>
                 <Col sm={1}>
-                <a href="https://acs.pub.ro/" target="blank"><img className="icon-right-img" src={ACSIcon} alt="ACS Icon"/></a>
+                    <a href="https://upb.ro/" target="blank"><img className="icon-right-img" src={UPBIcon} alt="UPB Icon"/></a>
                 </Col>
             </Row>
         </div>

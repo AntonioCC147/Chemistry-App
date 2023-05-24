@@ -20,6 +20,8 @@ import PilaCombustie from './components/pile/pilaCombustie';
 import Testeaza from './components/testeaza/testeaza';
 import Footer from './components/footer/footer';
 
+import NavbarComponent from './components/navbar/navbar';
+
 export default function App() {
   return (
     <div className="background">
@@ -33,6 +35,7 @@ export default function App() {
           </Col>
         </Row>
       </div>
+      <NavbarComponent/>
       <Router>
         <Routes>
           <Route exact path="/" element={<Acasa/>}></Route>

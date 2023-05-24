@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 
 import Aplicatii from '../../assets/images/other/Aplicatii.png';
@@ -11,7 +10,6 @@ import './clasifApp.css';
 export default function clasifApp() {
     return (
         <>
-            <NavbarComponent/>
             <Container className="container-xl footer-fix">
                 <Row>
                     <Col sm={4}>

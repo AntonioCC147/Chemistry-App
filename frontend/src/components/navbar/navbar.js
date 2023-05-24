@@ -14,17 +14,11 @@ export default function NavbarComponent() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-                <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
             <Nav.Link href="/functionalitati"><span className="nav-text">Funcționalități</span></Nav.Link>
-                <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
             <Nav.Link href="/clasapp"><span className="nav-text">Clasificare & Aplicații</span></Nav.Link>
-                <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
             <Nav.Link href="/elementulgalvanic"><span className="nav-text">Elementul Galvanic</span></Nav.Link>
-                <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
             <Nav.Link href="/acumulatori"><span className="nav-text">Acumulatori</span></Nav.Link>
-                <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
             <Nav.Link href="/reactivitate"><span className="nav-text">Reactivitate</span></Nav.Link>
-            <span className="navbar-divider" style={{margin: 'auto'}}>|</span>
             <NavDropdown className="nav-pile-text" title="Pile">
               <NavDropdown.Item href="/piladanielljacobi"><span className="nav-text">Pila Daniell-Jacobi</span></NavDropdown.Item>
               <NavDropdown.Item href="/pilalenclanche"><span className="nav-text">Pila Lenclanche</span></NavDropdown.Item>

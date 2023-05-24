@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
@@ -12,7 +11,6 @@ import NicVas from '../../assets/images/other/NicVas.jpg';
 export default function PilaAlcalina() {
     return (
         <>
-            <NavbarComponent/>
             <Container className="container-xl footer-fix">
                 <Row>
                     <Col sm={4}>
@@ -23,7 +21,7 @@ export default function PilaAlcalina() {
                         </>
                     }/>
                     <div className="text-center">
-                        <img style={{alignItems: "center", width: "250px", borderRadius: "20px"}} src={NicVas} alt="Nicolae Vasilescu"/>
+                        <img style={{alignItems: "center", width: "60%", borderRadius: "20px"}} src={NicVas} alt="Nicolae Vasilescu"/>
                     </div>
                     </Col>
                     <Col sm={8}>

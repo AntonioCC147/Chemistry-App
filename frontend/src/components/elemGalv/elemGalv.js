@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import NavbarComponent from '../navbar/navbar';
 import InfoBox from "../infoBox/infoBox";
 import LeftBox from '../infoBox/leftBox';
 
@@ -20,7 +19,6 @@ export default function elemGalv() {
 
     return (
         <>
-            <NavbarComponent/>
             <Container className="container-xl footer-fix">
                 <Row>
                     <Col sm={4}>
@@ -34,7 +32,7 @@ export default function elemGalv() {
                             </>
                         }/>
                         <div className="text-center">
-                            <img style={{margin: "20px", width: "400px"}} className="img-galv" src={ElemGalvBattery} alt="Baterie"/>
+                            <img style={{margin: "20px", width: "80%"}} className="img-galv" src={ElemGalvBattery} alt="Baterie"/>
                         </div>
                     </Col>
                     <Col sm={8}>

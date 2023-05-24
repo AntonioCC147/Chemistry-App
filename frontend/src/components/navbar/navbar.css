@@ -1,7 +1,7 @@
 .navbar-container {
     margin: 0px 75px 0px 75px;
     padding: 20px;
-    height: 75px;
+    height: auto;
 
     text-align: justify;
     font-size: 19px;
