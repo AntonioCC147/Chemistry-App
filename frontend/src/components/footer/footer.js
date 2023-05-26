@@ -15,13 +15,13 @@ export default function Footer() {
                 </Col>
                 <Col sm={10}>
                     <div className="text-align">
-                        <p className="">
+                        <p>
                             &copy; {new Date().getFullYear()} Copyright
                             <span style={{margin: 'auto', height: '100px'}}> | </span>
-                            <span
-                                target="blank" style={{ textAlign: 'center', textDecoration: 'none', color: '#210062', fontWeight: 'bold' }}>
+                            <a href="https://github.com/AntonioCC147" target="blank" style={{textDecoration: 'none', color: '#210062', fontWeight: 'bold'}}>
                                 Crantea Antonio Cristian
-                            </span>, student la "Facultatea de Automatică și Calculatoare"
+                            </a>
+                            , student la "Facultatea de Automatică și Calculatoare"
                         </p>
                         <p>
                             Universitatea Politehnică din București - Sesiunea de Comunicări Științifice

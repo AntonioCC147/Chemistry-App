@@ -35,10 +35,10 @@ export default function PilaAlcalina() {
                                     <img  src={PilaA} alt="Pila Alcalina"/>
                                 </div>
                                 <p className="cuprins-title"><span className="bold-text">Bateria cu Mercur:</span></p>
-                                <p>O alta pila galvanica folosita pe scara larga este bateria cu mercur. Poate lua forma unui disc mic si plat
-                                    si este folosita în aceasta forma în aparate pentru auz, celule fotoelectrice si ceasuri de mana electrice.
-                                    Electrodul negativ este din zinc, cel pozitiv din oxid de mercur, iar electrolitul este o solutie de
-                                    hidroxid de potasiu. Bateria de mercur produce circa 1.34V.
+                                <p>O altă pilă galvanică folosită pe scară largă este bateria cu mercur. Poate lua forma unui
+                                    disc mic și plat și este folosită în această formă în aparate pentru auz, celule fotoelectrice
+                                    și ceasuri de mână electrice. Electrodul negativ este din zinc, cel pozitiv din oxid de mercur,
+                                    iar electrolitul este o soluție de hidroxid de potasiu. Bateria de mercur produce circa 1.34V.
                                 </p>
                             </>
                         }/>
