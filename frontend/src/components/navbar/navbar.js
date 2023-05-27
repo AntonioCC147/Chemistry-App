@@ -1,34 +1,39 @@
-import Container from 'react-bootstrap/Container';
+import React from 'react';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
-import './navbar.css';
+import './navbar.css'
 
 export default function NavbarComponent() {
+  const currentPath = window.location.pathname;
+
+  const isCurrentPage = (path) => {
+    console.log(currentPath); console.log(path); 
+
+    return currentPath === path ? 'bold-text' : 'nav-text';
+  };
+
   return (
     <Navbar className="navbar-container" collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="/" className="navbar-brand"><span className="bold-text">Acasă</span></Navbar.Brand>
+        <Navbar.Brand href="/" className="navbar-brand"><span className={isCurrentPage('/')}>Acasă</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/functionalitati"><span className="nav-text">Funcționalități</span></Nav.Link>
-            <Nav.Link href="/clasapp"><span className="nav-text">Clasificare & Aplicații</span></Nav.Link>
-            <Nav.Link href="/elementulgalvanic"><span className="nav-text">Elementul Galvanic</span></Nav.Link>
-            <Nav.Link href="/acumulatori"><span className="nav-text">Acumulatori</span></Nav.Link>
-            <Nav.Link href="/reactivitate"><span className="nav-text">Reactivitate</span></Nav.Link>
+            <Nav.Link href="/functionalitati" className={isCurrentPage('/functionalitati')}>Funcționalități</Nav.Link>
+            <Nav.Link href="/clasapp" className={isCurrentPage('/clasapp')}>Clasificare & Aplicații</Nav.Link>
+            <Nav.Link href="/elementulgalvanic" className={isCurrentPage('/elementulgalvanic')}>Elementul Galvanic</Nav.Link>
+            <Nav.Link href="/acumulatori" className={isCurrentPage('/acumulatori')}>Acumulatori</Nav.Link>
+            <Nav.Link href="/reactivitate" className={isCurrentPage('/reactivitate')}>Reactivitate</Nav.Link>
             <NavDropdown className="nav-pile-text" title="Pile">
-              <NavDropdown.Item href="/piladanielljacobi"><span className="nav-text">Pila Daniell-Jacobi</span></NavDropdown.Item>
-              <NavDropdown.Item href="/pilalenclanche"><span className="nav-text">Pila Lenclanche</span></NavDropdown.Item>
-              <NavDropdown.Item href="/pilaalcalina"><span className="nav-text">Pila Alcalină</span></NavDropdown.Item>
-              <NavDropdown.Item href="/pilacombustie"><span className="nav-text">Pila de Combustie</span></NavDropdown.Item>
+              <NavDropdown.Item href="/piladanielljacobi" className={isCurrentPage('/piladanielljacobi')}>Pila Daniell-Jacobi</NavDropdown.Item>
+              <NavDropdown.Item href="/pilalenclanche" className={isCurrentPage('/pilalenclanche')}>Pila Lenclanche</NavDropdown.Item>
+              <NavDropdown.Item href="/pilaalcalina" className={isCurrentPage('/pilaalcalina')}>Pila Alcalină</NavDropdown.Item>
+              <NavDropdown.Item href="/pilacombustie" className={isCurrentPage('/pilacombustie')}>Pila de Combustie</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <div className="test-button">
             <Nav>
-              <Nav.Link style={{ textAlign: 'center', color: '#210062', fontWeight: 'bold' }} href="/testeaza">
+              <Nav.Link className={isCurrentPage('/testeaza')} href="/testeaza">
                 Testează
               </Nav.Link>
             </Nav>
