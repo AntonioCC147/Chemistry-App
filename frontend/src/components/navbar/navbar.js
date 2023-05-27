@@ -7,18 +7,16 @@ export default function NavbarComponent() {
   const currentPath = window.location.pathname;
 
   const isCurrentPage = (path) => {
-    console.log(currentPath); console.log(path); 
-
     return currentPath === path ? 'bold-text' : 'nav-text';
   };
 
   return (
     <Navbar className="navbar-container" collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="/" className="navbar-brand"><span className={isCurrentPage('/')}>Acasă</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+            <Nav.Link href="/" className={isCurrentPage('/')}>Acasă</Nav.Link>
             <Nav.Link href="/functionalitati" className={isCurrentPage('/functionalitati')}>Funcționalități</Nav.Link>
             <Nav.Link href="/clasapp" className={isCurrentPage('/clasapp')}>Clasificare & Aplicații</Nav.Link>
             <Nav.Link href="/elementulgalvanic" className={isCurrentPage('/elementulgalvanic')}>Elementul Galvanic</Nav.Link>
