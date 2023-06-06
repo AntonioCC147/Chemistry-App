@@ -15,8 +15,6 @@
     margin: 25px 0 15px 0;
     padding: 20px;
 
-    
-
     text-align: justify;
     font-size: 20px;
 
@@ -39,8 +37,12 @@
 @media only screen and (max-width: 768px) {
     .info-container {
         min-height: 400px;
+        font-size: 18px;
     }
     .vertical {
         min-height: 370px;
+    }
+    .left-container {
+        font-size: 18px;
     }
 }
