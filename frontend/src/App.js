@@ -52,7 +52,7 @@ export default function App() {
           <Route path="/testeaza" element={<Testeaza/>}></Route>
         </Routes>
       </Router>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
