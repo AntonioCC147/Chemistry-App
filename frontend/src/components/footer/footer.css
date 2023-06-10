@@ -12,13 +12,21 @@
 
 .icon-right-img {
     margin-right: 10px;
-
     width: 100px;
     height: auto;
 }
 
 .text-align {
     margin-top: 10px;
+}
+
+.top-button {
+    margin-right: 4%;
+    text-align: right;
+}
+
+.arrow {
+    width: 30px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -28,5 +36,8 @@
     }
     .icon-right-img {
         margin: auto;
+    }
+    .top-button {
+        margin-right: 7%;
     }
 }

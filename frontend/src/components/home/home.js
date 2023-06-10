@@ -17,26 +17,26 @@ export default function Home() {
             <Container className="container-xl footer-fix">
                 <Row>
                     <Col sm={4}>
-                    <LeftBox information={
-                        <>
-                            <p className="cuprins-title"><span className="bold-text">Experiment:</span></p>
-                            <p>
-                                <ul>
-                                    <li>
-                                    <span className="bold-text">Două pahare</span> - Acestea vor fi folosite pentru a conține substanțele necesare pentru generarea energiei electrice.
-                                    </li>
-                                    <li>
-                                    <span className="bold-text">Substanțe</span> - Este nevoie de două substanțe diferite, care să fie capabile să reacționeze chimic și să
-                                        producă energie electrică.
-                                    </li>
-                                    <li>
-                                    <span className="bold-text">Punte de sare</span> - Pentru a conecta cele două pahare și pentru a permite fluxul de ioni între ele, este necesară o punte de sare.
-                                        Aceasta este de obicei un șervețel de hârtie îmbibat într-o soluție saturată de sare, care este plasat între cele două pahare.
-                                    </li>
-                                </ul>
-                            </p>
-                        </>
-                    }/>
+                        <LeftBox information={
+                            <>
+                                <p className="cuprins-title"><span className="bold-text">Experiment:</span></p>
+                                <p>
+                                    <ul>
+                                        <li>
+                                        <span className="bold-text">Două pahare</span> - Acestea vor fi folosite pentru a conține substanțele necesare pentru generarea energiei electrice.
+                                        </li>
+                                        <li>
+                                        <span className="bold-text">Substanțe</span> - Este nevoie de două substanțe diferite, care să fie capabile să reacționeze chimic și să
+                                            producă energie electrică.
+                                        </li>
+                                        <li>
+                                        <span className="bold-text">Punte de sare</span> - Pentru a conecta cele două pahare și pentru a permite fluxul de ioni între ele, este necesară o punte de sare.
+                                            Aceasta este de obicei un șervețel de hârtie îmbibat într-o soluție saturată de sare, care este plasat între cele două pahare.
+                                        </li>
+                                    </ul>
+                                </p>
+                            </>
+                        }/>
                     </Col>
                     <Col sm={8} className="text-center">
                         <img style={{height:"100%", width:"75%"}} src={PileE1} alt="Pile Electrice 1"/>
