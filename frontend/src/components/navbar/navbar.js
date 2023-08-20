@@ -11,8 +11,8 @@ export default function NavbarComponent() {
   };
 
   return (
-    <Navbar className="navbar-container" collapseOnSelect expand="lg">
-      <Container>
+    <Container>
+      <Navbar className="navbar-container" collapseOnSelect expand="lg">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -37,7 +37,7 @@ export default function NavbarComponent() {
             </Nav>
           </div>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      </Navbar>
+    </Container>
   );
 }

@@ -27,7 +27,7 @@ export default function Footer() {
     };
 
     return (
-        <>
+        <div>
             <div className="top-button">
                 {showButton && (
                     <button style={{background:"transparent", border:"none"}}>
@@ -62,6 +62,6 @@ export default function Footer() {
                     </Col>
                 </Row>
             </div>
-        </>
+        </div>
     )
 }
