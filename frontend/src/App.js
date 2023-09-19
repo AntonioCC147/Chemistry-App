@@ -20,6 +20,7 @@ import PilaAlcalina from './components/pile/pilaAlcalina';
 import PilaCombustie from './components/pile/pilaCombustie';
 import Testeaza from './components/testeaza/testeaza';
 import Footer from './components/footer/footer';
+import Error404 from './components/error404/error404';
 
 import NavbarComponent from './components/navbar/navbar';
 
@@ -50,6 +51,7 @@ export default function App() {
           <Route path="/pilaalcalina" element={<PilaAlcalina/>}></Route>
           <Route path="/pilacombustie" element={<PilaCombustie/>}></Route>
           <Route path="/testeaza" element={<Testeaza/>}></Route>
+          <Route path="*" element={<Error404/>}></Route>
         </Routes>
       </Router>
       <Footer/>
