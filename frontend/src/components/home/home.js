@@ -16,7 +16,7 @@ export default function Home() {
         <>  
             <Container className="container-xl footer-fix">
                 <Row>
-                    <Col sm={4}>
+                    <Col sm={6}>
                         <LeftBox information={
                             <>
                                 <p className="cuprins-title"><span className="bold-text">Experiment:</span></p>
@@ -38,12 +38,12 @@ export default function Home() {
                             </>
                         }/>
                     </Col>
-                    <Col sm={8} className="text-center">
+                    <Col sm={6} className="text-center">
                         <img style={{height:"100%", width:"75%"}} src={PileE1} alt="Pile Electrice 1"/>
                     </Col>
                 </Row>
 			    <Row>
-                    <Col sm={7}>
+                    <Col sm={6}>
                         <InfoBox information={
                             <>
                                 <p><span className="bold-text">Pilele electrice</span> (celule galvanice sau celule voltaice) sunt celule electrochimice în care reacţii spontane
@@ -56,7 +56,7 @@ export default function Home() {
                             </>
                         }/>
                         </Col>
-                        <Col sm={5}>
+                        <Col sm={6}>
                             <Row>
                                 <div className="text-center"><img className="img-fix-home img-mobile" src={ElectricCar} alt="Pile Electrice 2"/></div>
                             </Row>

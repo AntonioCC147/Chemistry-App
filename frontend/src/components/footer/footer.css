@@ -6,13 +6,13 @@
 }
 
 .icon-left-img {
-    width: 100px;
+    width: 100%;
     height: auto;
 }
 
 .icon-right-img {
     margin-right: 10px;
-    width: 100px;
+    width: 100%;
     height: auto;
 }
 
@@ -33,9 +33,11 @@
     .icon-left-img {
         margin: auto;
         margin-bottom: 10px;
+        width: 20%;
     }
     .icon-right-img {
         margin: auto;
+        width: 20%;
     }
     .top-button {
         margin-right: 7%;
