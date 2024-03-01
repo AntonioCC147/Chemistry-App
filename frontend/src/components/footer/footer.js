@@ -51,7 +51,7 @@ export default function Footer() {
                                 , student la "Facultatea de Automatică și Calculatoare"
                             </p>
                             <p>
-                                Universitatea Politehnică din București - Sesiunea de Comunicări Științifice
+                                Universitatea Națională de Știință și Tehnologie Politehnica București - Sesiunea de Comunicări Științifice
                                 <span style={{margin: 'auto', height: '100px'}}> | </span>
                                 Mai 2023
                             </p>

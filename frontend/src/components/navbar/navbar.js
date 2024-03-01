@@ -12,10 +12,10 @@ export default function NavbarComponent() {
 
   return (
     <Container>
-      <Navbar className="navbar-container" collapseOnSelect expand="lg">
+      <Navbar className="navbar-container rightAlign" collapseOnSelect expand="xl">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto rightAlign">
             <Nav.Link href="/" className={isCurrentPage('/')}>Acasă</Nav.Link>
             <Nav.Link href="/functionalitati" className={isCurrentPage('/functionalitati')}>Funcționalități</Nav.Link>
             <Nav.Link href="/clasapp" className={isCurrentPage('/clasapp')}>Clasificare & Aplicații</Nav.Link>

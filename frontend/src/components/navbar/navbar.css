@@ -42,3 +42,13 @@
     font-weight: 400;
     color: #210062 !important;
 }
+
+.rightAlign {
+    display: flex !important;
+    justify-content: right !important;
+    align-items: right !important;
+}
+
+.nav-link {
+    text-align: center;
+}

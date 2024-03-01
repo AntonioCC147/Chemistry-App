@@ -39,8 +39,8 @@ export default function Acumulatori() {
                                 </p>
                             </>
                         }/>
-                        <img style={{margin: "auto", width: "100%"}} className="img-clasapp" src={Battery1} alt="Baterie"/>
-                        <img style={{margin: "auto", width: "100%", marginTop: "20%"}} className="img-clasapp" src={Battery2} alt="Baterie"/>
+                        <img style={{display: "flex", margin: "auto", width: "100%"}} className="img-clasapp" src={Battery1} alt="Baterie"/>
+                        <img style={{display: "flex", margin: "auto", width: "100%", marginTop: "20%"}} className="img-clasapp" src={Battery2} alt="Baterie"/>
                     </Col>
                     <Col sm={8}>
                         <InfoBox information={
