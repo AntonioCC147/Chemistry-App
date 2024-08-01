@@ -64,14 +64,6 @@
     color: rgb(26, 25, 25);
 }
 
-.img-fix-home {
-    width: 80%;
-    height: auto;
-
-    border-radius: 20px;
-    filter: drop-shadow(0 1px 16px #bdbdbd);
-}
-
 .img-fix {
     width: auto;
     height: 500px;
@@ -103,6 +95,10 @@
     height: 130px;
 
     text-align: center;
+}
+
+.home-image {
+    width: 500px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -147,10 +143,14 @@
     }
 }
 
-@media only screen and (max-width: 820px) {
-    .img-mobile {
-        margin: 10px 10px 20px 0px;
+@media only screen and (max-width: 600px) {
+    .home-image {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .home-image {
         width: 300px;
-        height: auto;
     }
 }
