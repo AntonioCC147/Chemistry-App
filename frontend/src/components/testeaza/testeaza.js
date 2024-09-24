@@ -79,7 +79,7 @@ export default function Testeaza() {
                                             onClick={() => {setLeftGlassName(<Latex>$AgNO_3$</Latex>); setVerifyLeftGlass("Ag")}}><Latex>$AgNO_3$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item
-                                            onClick={() => {setLeftGlassName(<Latex>$MgNO_3$</Latex>); setVerifyLeftGlass("Mg")}}><Latex>$MgNO_3$</Latex>
+                                            onClick={() => {setLeftGlassName(<Latex>$Mg(NO_3)_2$</Latex>); setVerifyLeftGlass("Mg")}}><Latex>$Mg(NO_3)_2$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item 
                                             onClick={() => {setLeftGlassName(<Latex>$Cu(NO_3)_2$</Latex>); setVerifyLeftGlass("Cu")}}><Latex>$Cu(NO_3)_2$</Latex>
