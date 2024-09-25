@@ -147,6 +147,11 @@ const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, 
         ||
         //Cazul 8
         (verifyLeftGlass === "Ni" && verifyLeftElthPName === "Ni" && verifyRightGlass === "Fe" && verifyRightElthPName === "Fe")
+    
+        ||
+        //Cazul 9
+        (verifyLeftGlass === "Fe" && verifyLeftElthPName === "Fe" && ((verifyRightGlass === "Al" && verifyRightElthPName === "Al") ||
+        (verifyRightGlass === "Mg" && verifyRightElthPName === "Mg")))
     ){
         if(verifyLeftGlass === "Ag" && verifyRightGlass === "Al") potential_Standard = 2.45; else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Mg") potential_Standard = 3.16;
         else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Cu") potential_Standard = 0.45; else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Sn") potential_Standard = 0.93;
@@ -156,7 +161,8 @@ const CheckInputs = ({ show, handleClose, verifyLeftGlass, verifyLeftElthPName, 
         else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Fe") potential_Standard = 1.23; else if(verifyLeftGlass === "Ag" && verifyRightGlass === "Ni") potential_Standard = 1.04;
         else if(verifyLeftGlass === "Cu" && verifyRightGlass === "Fe") potential_Standard = 0.78; else if(verifyLeftGlass === "Cu" && verifyRightGlass === "Ni") potential_Standard = 0.59;
         else if(verifyLeftGlass === "Sn" && verifyRightGlass === "Fe") potential_Standard = 0.3; else if(verifyLeftGlass === "Sn" && verifyRightGlass === "Ni") potential_Standard = 0.11;
-        else if(verifyLeftGlass === "Ni" && verifyRightGlass === "Fe") potential_Standard = 0.19;
+        else if(verifyLeftGlass === "Ni" && verifyRightGlass === "Fe") potential_Standard = 0.19; else if(verifyLeftGlass === "Fe" && verifyRightGlass === "Al") potential_Standard = 1.22;
+        else if(verifyLeftGlass === "Fe" && verifyRightGlass === "Mg") potential_Standard = 1.93;
 
         return (
             <Modal show={show} onHide={handleClose}>

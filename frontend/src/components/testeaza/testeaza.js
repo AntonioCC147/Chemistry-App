@@ -85,6 +85,9 @@ export default function Testeaza() {
                                             onClick={() => {setLeftGlassName(<Latex>$Cu(NO_3)_2$</Latex>); setVerifyLeftGlass("Cu")}}><Latex>$Cu(NO_3)_2$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item
+                                            onClick={() => {setLeftGlassName(<Latex>$Fe(NO_3)_2$</Latex>); setVerifyLeftGlass("Fe")}}><Latex>$Fe(NO_3)_2$</Latex>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item
                                             onClick={() => {setLeftGlassName(<Latex>$Sn(NO_3)_2$</Latex>); setVerifyLeftGlass("Sn")}}><Latex>$Sn(NO_3)_2$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item
@@ -107,6 +110,9 @@ export default function Testeaza() {
                                         </Dropdown.Item>
                                         <Dropdown.Item
                                             onClick={() => {setLeftElthPName(<Latex>$Cu\;(Cupru)$</Latex>); setVerifyLeftElthPName("Cu")}}><Latex>$Cu\;(Cupru)$</Latex>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item
+                                            onClick={() => {setLeftElthPName(<Latex>$Fe\;(Fier)$</Latex>); setVerifyLeftElthPName("Fe")}}><Latex>$Fe\;(Fier)$</Latex>
                                         </Dropdown.Item>
                                         <Dropdown.Item
                                             onClick={() => {setLeftElthPName(<Latex>$Sn\;(Staniu)$</Latex>); setVerifyLeftElthPName("Sn")}}><Latex>$Sn\;(Staniu)$</Latex>
@@ -305,7 +311,7 @@ export default function Testeaza() {
                                     <Latex>{Al}</Latex><Latex>$=-1.66$</Latex><br/>
                                     <Latex>{Ag}</Latex><Latex>$=0.79$</Latex><br/>
                                     <Latex>{Mg}</Latex><Latex>$=-2.37$</Latex><br/>
-                                    <Latex>{Cu}</Latex><Latex>$=-0.34$</Latex><br/>
+                                    <Latex>{Cu}</Latex><Latex>$=0.34$</Latex><br/>
                                     <Latex>{Sn}</Latex><Latex>$=-0.14$</Latex><br/>
                                     <Latex>{Fe}</Latex><Latex>$=-0.44$</Latex><br/>
                                     <Latex>{Ni}</Latex><Latex>$=-0.25$</Latex>
@@ -317,13 +323,13 @@ export default function Testeaza() {
                         <InfoBox information={
                             <>
                                 <p className="cuprins-title"><span className="bold-text">Ce reprezintă totuși potențialele standard?</span></p>
-                                <p>În electrochimie, potențialul standard de electrod (sau potențialul standard de reducere) reprezintă o
+                                <p> În electrochimie, potențialul standard de electrod (sau potențialul standard de reducere) reprezintă o
                                     măsură a potențialului unui electrod reversibil în stare standard, adică solutul cu o concentrație
                                     efectivă de 1 mol/dm<sup>3</sup> și gazele la o presiune de 1 atmosferă. Valorile pentru potențialele standard de
                                     electrod se găsesc de obicei în tabele, pentru o temperatură de 25 °C și au fost determinate având ca
                                     referință electrodul standard de hidrogen.
                                 </p>
-                                <p>Baza pentru o celulă electrochimică, precum este o celulă galvanică, este mereu o reacție redox, care
+                                <p> Baza pentru o celulă electrochimică, precum este o celulă galvanică, este mereu o reacție redox, care
                                     poate fi împărțită în două așa-zise semi-reacții: oxidarea ce are loc la anod (cu cedare de electron)
                                     și reducerea ce are loc la catod. Electricitatea este generată ca urmare a
                                     diferenței de potențial electric dintre cei doi electrozi.
